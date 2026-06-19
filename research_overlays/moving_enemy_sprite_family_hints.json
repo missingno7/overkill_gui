@@ -1,0 +1,206 @@
+{
+  "_meta": {
+    "purpose": "Usable sprite-family hints for GUI overlays and future verification.",
+    "status_levels": {
+      "confirmed": "Observed in runtime dump and supported by code/data",
+      "strong_static": "Direct sprite formula in behavior path, not yet runtime-confirmed",
+      "candidate": "Plausible static association, needs runtime check",
+      "unresolved": "Placement decoded, sprite family not yet assigned"
+    }
+  },
+  "behaviors": {
+    "0x2D": {
+      "status": "confirmed",
+      "display": "2X2:147\u2013150",
+      "sprite_frames": [
+        147,
+        148,
+        149,
+        150
+      ],
+      "formula": "0x93 + [0x233C]",
+      "evidence": [
+        "Runtime dump: blue 4-enemy LEV1 formation showed sprite 149, behavior 0x2D.",
+        "User identified the animation as 2X2:147\u2013150.",
+        "Static formula candidate at raw 0x8615: AX=[0x233C]+0x93 -> 147..150; CFG ownership still being tightened."
+      ]
+    },
+    "0x8B": {
+      "status": "confirmed",
+      "display": "2X2:101\u2013104",
+      "sprite_frames": [
+        101,
+        102,
+        103,
+        104
+      ],
+      "formula": "0x61 + 4*(+1) + [0x233C] + state; state=0 snapshot -> 0x65..0x68",
+      "evidence": [
+        "Runtime dump: green enemy had sprite 104, behavior 0x8B.",
+        "User identified animation as 2X2:101\u2013104.",
+        "Static code at raw 0xB1CB..0xB1F5 matches the 101..104 frame range for state=0."
+      ]
+    },
+    "0x8C": {
+      "status": "strong_static",
+      "display": "likely 2X2:93\u201396",
+      "sprite_frames": [
+        93,
+        94,
+        95,
+        96
+      ],
+      "formula": "0x61 + 4*(-1) + [0x233C] + state; state=0 -> 0x5D..0x60",
+      "evidence": [
+        "Shared code path with 0x8B, but initializes the sign/control word to -1 instead of +1.",
+        "Needs runtime confirmation."
+      ]
+    },
+    "0x89": {
+      "status": "strong_static",
+      "display": "likely 2X2:28\u201331",
+      "sprite_frames": [
+        28,
+        29,
+        30,
+        31
+      ],
+      "formula": "0x1C + [0x233C]",
+      "evidence": [
+        "Raw 0xA8E9..0xA8EF sets object sprite to [0x233C]+0x1C."
+      ]
+    },
+    "0x30": {
+      "status": "strong_static",
+      "display": "2X2:16\u201319 primary anim; also 110 in later state",
+      "sprite_frames": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "formula": "0x10 + [0x233C]",
+      "extra_frames": [
+        110
+      ],
+      "evidence": [
+        "Raw 0x8851..0x8855: AX=[0x233C]+0x10.",
+        "Same handler block later sets sprite 0x6E (110), so this behavior is multi-phase."
+      ]
+    },
+    "0x19": {
+      "status": "strong_static",
+      "display": "likely 2X2:54\u201358",
+      "sprite_frames": [
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "formula": "0x36 + [0x233A]",
+      "evidence": [
+        "[0x233A] cycles 0..4.",
+        "Raw 0xB133..0xB139 writes sprite [0x233A]+0x36."
+      ]
+    },
+    "0x1A": {
+      "status": "strong_static",
+      "display": "likely 2X2:36\u201341",
+      "sprite_frames": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "formula": "0x24 + [0x2338]",
+      "evidence": [
+        "[0x2338] cycles 0..5.",
+        "Raw 0xB117..0xB11F writes sprite [0x2338]+0x24."
+      ]
+    },
+    "0x1B": {
+      "status": "strong_static",
+      "display": "likely 2X2:39\u201344",
+      "sprite_frames": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "formula": "0x27 + [0x2338]",
+      "evidence": [
+        "[0x2338] cycles 0..5.",
+        "Raw 0xB10A..0xB112 writes sprite [0x2338]+0x27."
+      ]
+    },
+    "0x3B": {
+      "status": "strong_static",
+      "display": "likely 2X2:81\u201386",
+      "sprite_frames": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86
+      ],
+      "formula": "0x51 + [0x2338]",
+      "evidence": [
+        "[0x2338] cycles 0..5.",
+        "Raw 0x8A7E..0x8AA3 reaches sprite write [0x2338]+0x51."
+      ]
+    },
+    "0x40": {
+      "status": "strong_static",
+      "display": "likely 2X2:128\u2013135 in one phase",
+      "sprite_frames": [
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135
+      ],
+      "formula": "0x80 + (([0x2328] + BP + [0x2340]) & 7)",
+      "evidence": [
+        "Raw 0x8B70..0x8B7F computes sprite in the 0x80..0x87 range.",
+        "Behavior is multi-phase; earlier block also uses a DS lookup table plus 0xCF."
+      ]
+    },
+    "0x83": {
+      "status": "strong_static",
+      "display": "likely 2X2:259\u2013260, or 376\u2013377 in level 4 branch",
+      "sprite_frames": [
+        259,
+        260
+      ],
+      "alternate_sprite_frames": [
+        376,
+        377
+      ],
+      "formula": "([0x232A] >> 3) + 0x103; level 4 branch uses base 0x178",
+      "evidence": [
+        "[0x232A] cycles 0..15; shifting right 3 yields 0 or 1.",
+        "Raw 0x89E6..0x89FE writes the computed sprite."
+      ]
+    }
+  },
+  "intro_minigame": {
+    "0x20": {
+      "status": "confirmed_partial",
+      "display": "snapshot showed 2X2:123 and 126",
+      "observed_snapshot_sprites": [
+        123,
+        126
+      ],
+      "note": "Intro minigame behavior, not a regular scrolling moving-enemy spawn-stream behavior."
+    }
+  }
+}

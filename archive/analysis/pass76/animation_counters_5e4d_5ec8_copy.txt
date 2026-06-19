@@ -1,0 +1,29 @@
+    5e4d:	ff 06 38 23          	incw   0x2338
+    5e51:	83 3e 38 23 06       	cmpw   $0x6,0x2338
+    5e56:	72 06                	jb     0x5e5e
+    5e58:	c7 06 38 23 00 00    	movw   $0x0,0x2338
+    5e5e:	ff 06 3a 23          	incw   0x233a
+    5e62:	83 3e 3a 23 05       	cmpw   $0x5,0x233a
+    5e67:	72 06                	jb     0x5e6f
+    5e69:	c7 06 3a 23 00 00    	movw   $0x0,0x233a
+    5e6f:	ff 06 3e 23          	incw   0x233e
+    5e73:	83 3e 3e 23 03       	cmpw   $0x3,0x233e
+    5e78:	72 06                	jb     0x5e80
+    5e7a:	c7 06 3e 23 00 00    	movw   $0x0,0x233e
+    5e80:	ff 06 3c 23          	incw   0x233c
+    5e84:	83 26 3c 23 03       	andw   $0x3,0x233c
+    5e89:	ff 06 36 23          	incw   0x2336
+    5e8d:	83 26 36 23 07       	andw   $0x7,0x2336
+    5e92:	ff 06 a0 a7          	incw   -0x5860
+    5e96:	83 36 24 23 01       	xorw   $0x1,0x2324
+    5e9b:	ff 06 26 23          	incw   0x2326
+    5e9f:	83 26 26 23 03       	andw   $0x3,0x2326
+    5ea4:	ff 06 28 23          	incw   0x2328
+    5ea8:	83 26 28 23 07       	andw   $0x7,0x2328
+    5ead:	ff 06 2a 23          	incw   0x232a
+    5eb1:	83 26 2a 23 0f       	andw   $0xf,0x232a
+    5eb6:	ff 06 2c 23          	incw   0x232c
+    5eba:	83 26 2c 23 1f       	andw   $0x1f,0x232c
+    5ebf:	ff 06 2e 23          	incw   0x232e
+    5ec3:	83 26 2e 23 3f       	andw   $0x3f,0x232e
+    5ec8:	ff 06 30 23          	incw   0x2330

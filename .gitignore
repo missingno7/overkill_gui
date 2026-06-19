@@ -1,0 +1,40 @@
+__pycache__
+backup
+.pytest_cache
+__bigtest.txt
+assets
+game_data
+overkill_extraction
+
+
+# Local assistant/tool state
+.claude/
+
+# Scratch traces, dumps, and rendered probes
+trace_start.txt
+tmp_*.bin
+tmp_*.png
+
+
+becomes a test fixture).
+artifacts/repros/
+# Python/tool caches
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local Nuked-OPL3 build products
+nuked_opl3/_opl3_cffi*.pyd
+nuked_opl3/_opl3_cffi*.so
+nuked_opl3/_opl3_cffi*.dylib
+nuked_opl3/_opl3_cffi*.dll
+
+# Python package/build outputs
+build/
+dist/
+
+
+# JetBrains IDE config
+.idea/
+

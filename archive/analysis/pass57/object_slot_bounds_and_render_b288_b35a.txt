@@ -1,0 +1,78 @@
+    b288:	a1 78 a2             	mov    0xa278,%ax
+    b28b:	01 46 02             	add    %ax,0x2(%bp)
+    b28e:	e8 63 00             	call   0xb2f4
+    b291:	83 3e 7c a4 00       	cmpw   $0x0,-0x5b84
+    b296:	75 41                	jne    0xb2d9
+    b298:	83 7e 18 00          	cmpw   $0x0,0x18(%bp)
+    b29c:	74 3b                	je     0xb2d9
+    b29e:	83 7e 18 48          	cmpw   $0x48,0x18(%bp)
+    b2a2:	74 35                	je     0xb2d9
+    b2a4:	83 7e 18 26          	cmpw   $0x26,0x18(%bp)
+    b2a8:	74 2f                	je     0xb2d9
+    b2aa:	81 7e 18 86 00       	cmpw   $0x86,0x18(%bp)
+    b2af:	74 28                	je     0xb2d9
+    b2b1:	83 7e 18 28          	cmpw   $0x28,0x18(%bp)
+    b2b5:	74 22                	je     0xb2d9
+    b2b7:	83 7e 18 29          	cmpw   $0x29,0x18(%bp)
+    b2bb:	74 1c                	je     0xb2d9
+    b2bd:	83 7e 18 34          	cmpw   $0x34,0x18(%bp)
+    b2c1:	74 16                	je     0xb2d9
+    b2c3:	81 7e 02 40 ff       	cmpw   $0xff40,0x2(%bp)
+    b2c8:	7d 03                	jge    0xb2cd
+    b2ca:	e9 8d 00             	jmp    0xb35a
+    b2cd:	81 7e 02 f0 00       	cmpw   $0xf0,0x2(%bp)
+    b2d2:	7c 03                	jl     0xb2d7
+    b2d4:	e9 83 00             	jmp    0xb35a
+    b2d7:	eb 0d                	jmp    0xb2e6
+    b2d9:	83 7e 02 ec          	cmpw   $0xffec,0x2(%bp)
+    b2dd:	7c 7b                	jl     0xb35a
+    b2df:	81 7e 02 f0 00       	cmpw   $0xf0,0x2(%bp)
+    b2e4:	7d 74                	jge    0xb35a
+    b2e6:	83 3e 7c a4 00       	cmpw   $0x0,-0x5b84
+    b2eb:	75 06                	jne    0xb2f3
+    b2ed:	e8 1e 00             	call   0xb30e
+    b2f0:	e8 46 a6             	call   0x5939
+    b2f3:	c3                   	ret
+    b2f4:	81 7e 04 c0 00       	cmpw   $0xc0,0x4(%bp)
+    b2f9:	7f 07                	jg     0xb302
+    b2fb:	83 7e 04 00          	cmpw   $0x0,0x4(%bp)
+    b2ff:	7c 07                	jl     0xb308
+    b301:	c3                   	ret
+    b302:	c7 46 04 c0 00       	movw   $0xc0,0x4(%bp)
+    b307:	c3                   	ret
+    b308:	c7 46 04 00 00       	movw   $0x0,0x4(%bp)
+    b30d:	c3                   	ret
+    b30e:	83 7e 00 00          	cmpw   $0x0,0x0(%bp)
+    b312:	75 01                	jne    0xb315
+    b314:	c3                   	ret
+    b315:	83 7e 16 05          	cmpw   $0x5,0x16(%bp)
+    b319:	75 01                	jne    0xb31c
+    b31b:	c3                   	ret
+    b31c:	83 7e 18 00          	cmpw   $0x0,0x18(%bp)
+    b320:	75 01                	jne    0xb323
+    b322:	c3                   	ret
+    b323:	83 7e 18 01          	cmpw   $0x1,0x18(%bp)
+    b327:	75 01                	jne    0xb32a
+    b329:	c3                   	ret
+    b32a:	83 7e 14 01          	cmpw   $0x1,0x14(%bp)
+    b32e:	74 07                	je     0xb337
+    b330:	83 7e 14 02          	cmpw   $0x2,0x14(%bp)
+    b334:	74 06                	je     0xb33c
+    b336:	c3                   	ret
+    b337:	e8 4f ed             	call   0xa089
+    b33a:	eb 03                	jmp    0xb33f
+    b33c:	e8 75 ed             	call   0xa0b4
+    b33f:	72 01                	jb     0xb342
+    b341:	c3                   	ret
+    b342:	83 3e c2 a8 01       	cmpw   $0x1,-0x573e
+    b347:	74 03                	je     0xb34c
+    b349:	e8 be 02             	call   0xb60a
+    b34c:	e8 5d e1             	call   0x94ac
+    b34f:	c3                   	ret
+    b350:	55                   	push   %bp
+    b351:	8b eb                	mov    %bx,%bp
+    b353:	e8 04 00             	call   0xb35a
+    b356:	8b dd                	mov    %bp,%bx
+    b358:	5d                   	pop    %bp
+    b359:	c3                   	ret
+    b35a:	c7 46 00 00 00       	movw   $0x0,0x0(%bp)

@@ -1,0 +1,110 @@
+    4b19:	5e                   	pop    %si
+    4b1a:	e8 12 00             	call   0x4b2f
+    4b1d:	8b 1e 56 23          	mov    0x2356,%bx
+    4b21:	d1 e3                	shl    $1,%bx
+    4b23:	81 c3 ca 20          	add    $0x20ca,%bx
+    4b27:	8b 1f                	mov    (%bx),%bx
+    4b29:	a1 c8 20             	mov    0x20c8,%ax
+    4b2c:	89 07                	mov    %ax,(%bx)
+    4b2e:	c3                   	ret
+    4b2f:	57                   	push   %di
+    4b30:	56                   	push   %si
+    4b31:	e8 6f 59             	call   0xa4a3
+    4b34:	5e                   	pop    %si
+    4b35:	5f                   	pop    %di
+    4b36:	39 3e 50 23          	cmp    %di,0x2350
+    4b3a:	77 f3                	ja     0x4b2f
+    4b3c:	83 3e 4e 23 00       	cmpw   $0x0,0x234e
+    4b41:	75 ec                	jne    0x4b2f
+    4b43:	89 36 78 a9          	mov    %si,-0x5688
+    4b47:	c3                   	ret
+    4b48:	50                   	push   %ax
+    4b49:	53                   	push   %bx
+    4b4a:	51                   	push   %cx
+    4b4b:	52                   	push   %dx
+    4b4c:	57                   	push   %di
+    4b4d:	56                   	push   %si
+    4b4e:	55                   	push   %bp
+    4b4f:	06                   	push   %es
+    4b50:	1e                   	push   %ds
+    4b51:	2e 8e 06 92 95       	mov    %cs:-0x6a6e,%es
+    4b56:	8b 36 50 23          	mov    0x2350,%si
+    4b5a:	b9 9c 00             	mov    $0x9c,%cx
+    4b5d:	4e                   	dec    %si
+    4b5e:	8b 1e 56 23          	mov    0x2356,%bx
+    4b62:	d1 e3                	shl    $1,%bx
+    4b64:	8b 9f d6 20          	mov    0x20d6(%bx),%bx
+    4b68:	2e 83 3f ff          	cmpw   $0xffff,%cs:(%bx)
+    4b6c:	74 1d                	je     0x4b8b
+    4b6e:	26 8a 04             	mov    %es:(%si),%al
+    4b71:	32 e4                	xor    %ah,%ah
+    4b73:	2e 3b 07             	cmp    %cs:(%bx),%ax
+    4b76:	75 04                	jne    0x4b7c
+    4b78:	2e ff 67 02          	jmp    *%cs:0x2(%bx)
+    4b7c:	83 c3 04             	add    $0x4,%bx
+    4b7f:	eb e7                	jmp    0x4b68
+    4b81:	26 c6 04 28          	movb   $0x28,%es:(%si)
+    4b85:	eb 04                	jmp    0x4b8b
+    4b87:	26 c6 04 01          	movb   $0x1,%es:(%si)
+    4b8b:	e2 d0                	loop   0x4b5d
+    4b8d:	1f                   	pop    %ds
+    4b8e:	07                   	pop    %es
+    4b8f:	5d                   	pop    %bp
+    4b90:	5e                   	pop    %si
+    4b91:	5f                   	pop    %di
+    4b92:	5a                   	pop    %dx
+    4b93:	59                   	pop    %cx
+    4b94:	5b                   	pop    %bx
+    4b95:	58                   	pop    %ax
+    4b96:	c3                   	ret
+    4b97:	bd e2 20             	mov    $0x20e2,%bp
+    4b9a:	83 3e 80 bb 01       	cmpw   $0x1,-0x4480
+    4b9f:	74 03                	je     0x4ba4
+    4ba1:	bd 00 21             	mov    $0x2100,%bp
+    4ba4:	e8 07 03             	call   0x4eae
+    4ba7:	e8 da b2             	call   0xfe84
+    4baa:	80 3e be 98 10       	cmpb   $0x10,-0x6742
+    4baf:	75 f6                	jne    0x4ba7
+    4bb1:	e8 d0 b2             	call   0xfe84
+    4bb4:	80 3e be 98 10       	cmpb   $0x10,-0x6742
+    4bb9:	74 f6                	je     0x4bb1
+    4bbb:	bd 1e 21             	mov    $0x211e,%bp
+    4bbe:	e9 ed 02             	jmp    0x4eae
+    4bc1:	1e                   	push   %ds
+    4bc2:	06                   	push   %es
+    4bc3:	b4 35                	mov    $0x35,%ah
+    4bc5:	b0 09                	mov    $0x9,%al
+    4bc7:	cd 21                	int    $0x21
+    4bc9:	bf 3a 21             	mov    $0x213a,%di
+    4bcc:	8c 05                	mov    %es,(%di)
+    4bce:	89 5d 02             	mov    %bx,0x2(%di)
+    4bd1:	07                   	pop    %es
+    4bd2:	1e                   	push   %ds
+    4bd3:	0e                   	push   %cs
+    4bd4:	1f                   	pop    %ds
+    4bd5:	ba d2 4e             	mov    $0x4ed2,%dx
+    4bd8:	b4 25                	mov    $0x25,%ah
+    4bda:	b0 09                	mov    $0x9,%al
+    4bdc:	cd 21                	int    $0x21
+    4bde:	1f                   	pop    %ds
+    4bdf:	1f                   	pop    %ds
+    4be0:	c3                   	ret
+    4be1:	1e                   	push   %ds
+    4be2:	bf 3a 21             	mov    $0x213a,%di
+    4be5:	8b 55 02             	mov    0x2(%di),%dx
+    4be8:	8b 05                	mov    (%di),%ax
+    4bea:	8e d8                	mov    %ax,%ds
+    4bec:	b4 25                	mov    $0x25,%ah
+    4bee:	b0 09                	mov    $0x9,%al
+    4bf0:	cd 21                	int    $0x21
+    4bf2:	1f                   	pop    %ds
+    4bf3:	c3                   	ret
+    4bf4:	50                   	push   %ax
+    4bf5:	53                   	push   %bx
+    4bf6:	51                   	push   %cx
+    4bf7:	52                   	push   %dx
+    4bf8:	57                   	push   %di
+    4bf9:	56                   	push   %si
+    4bfa:	55                   	push   %bp
+    4bfb:	06                   	push   %es
+    4bfc:	1e                   	push   %ds

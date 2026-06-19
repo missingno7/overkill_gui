@@ -1,0 +1,48 @@
+    99bb:	83 fe ff             	cmp    $0xffff,%si
+    99be:	75 01                	jne    0x99c1
+    99c0:	c3                   	ret
+    99c1:	83 3e 5e a9 00       	cmpw   $0x0,-0x56a2
+    99c6:	75 01                	jne    0x99c9
+    99c8:	c3                   	ret
+    99c9:	83 3e a4 a3 00       	cmpw   $0x0,-0x5c5c
+    99ce:	74 01                	je     0x99d1
+    99d0:	c3                   	ret
+    99d1:	e8 05 00             	call   0x99d9
+    99d4:	c7 47 18 06 00       	movw   $0x6,0x18(%bx)
+    99d9:	ff 06 76 a9          	incw   -0x568a
+    99dd:	80 3e c0 98 00       	cmpb   $0x0,-0x6740
+    99e2:	74 05                	je     0x99e9
+    99e4:	c6 06 ff be 12       	movb   $0x12,-0x4101
+    99e9:	e8 41 01             	call   0x9b2d
+    99ec:	8b 44 04             	mov    0x4(%si),%ax
+    99ef:	05 04 00             	add    $0x4,%ax
+    99f2:	89 47 04             	mov    %ax,0x4(%bx)
+    99f5:	8b 44 02             	mov    0x2(%si),%ax
+    99f8:	05 04 00             	add    $0x4,%ax
+    99fb:	89 47 02             	mov    %ax,0x2(%bx)
+    99fe:	83 67 04 fc          	andw   $0xfffc,0x4(%bx)
+    9a02:	c7 47 08 08 00       	movw   $0x8,0x8(%bx)
+    9a07:	c7 47 18 05 00       	movw   $0x5,0x18(%bx)
+    9a0c:	c3                   	ret
+    9a0d:	c7 06 ec a3 07 00    	movw   $0x7,-0x5c14
+    9a13:	8b 36 66 a9          	mov    -0x569a,%si
+    9a17:	e8 43 00             	call   0x9a5d
+    9a1a:	c7 06 ec a3 01 00    	movw   $0x1,-0x5c14
+    9a20:	8b 36 68 a9          	mov    -0x5698,%si
+    9a24:	e8 36 00             	call   0x9a5d
+    9a27:	c7 06 ec a3 07 00    	movw   $0x7,-0x5c14
+    9a2d:	8b 36 6a a9          	mov    -0x5696,%si
+    9a31:	e8 29 00             	call   0x9a5d
+    9a34:	c7 06 ec a3 01 00    	movw   $0x1,-0x5c14
+    9a3a:	8b 36 6c a9          	mov    -0x5694,%si
+    9a3e:	e8 1c 00             	call   0x9a5d
+    9a41:	c3                   	ret
+    9a42:	c7 06 ec a3 ff ff    	movw   $0xffff,-0x5c14
+    9a48:	8b 36 62 a9          	mov    -0x569e,%si
+    9a4c:	e8 0e 00             	call   0x9a5d
+    9a4f:	e8 69 ff             	call   0x99bb
+    9a52:	8b 36 64 a9          	mov    -0x569c,%si
+    9a56:	e8 04 00             	call   0x9a5d
+    9a59:	e8 5f ff             	call   0x99bb
+    9a5c:	c3                   	ret
+    9a5d:	83 fe ff             	cmp    $0xffff,%si

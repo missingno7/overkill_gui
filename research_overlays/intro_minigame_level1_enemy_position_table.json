@@ -1,0 +1,133 @@
+{
+  "_meta": {
+    "raw_exe_offset": "0x11161",
+    "runtime_data_note": "The preceding word 0xA844 is consistent with DS:A842 initially pointing to the table at DS:A844.",
+    "reader_code": "0xDD81..0xDDBC",
+    "record_format": "s16 stored_y_minus_0x20, s16 x",
+    "spawned_behavior": "0x20",
+    "runtime_y_rule": "y = stored_y_minus_0x20 + 0x20",
+    "confirmation": "These 20 records exactly match the 20 behavior-0x20 objects in the uploaded minigame dump."
+  },
+  "records": [
+    {
+      "index": 0,
+      "stored_y_minus_0x20": 64,
+      "x": 144,
+      "resolved_y": 96
+    },
+    {
+      "index": 1,
+      "stored_y_minus_0x20": 64,
+      "x": 128,
+      "resolved_y": 96
+    },
+    {
+      "index": 2,
+      "stored_y_minus_0x20": 48,
+      "x": 128,
+      "resolved_y": 80
+    },
+    {
+      "index": 3,
+      "stored_y_minus_0x20": 48,
+      "x": 144,
+      "resolved_y": 80
+    },
+    {
+      "index": 4,
+      "stored_y_minus_0x20": 32,
+      "x": 112,
+      "resolved_y": 64
+    },
+    {
+      "index": 5,
+      "stored_y_minus_0x20": 32,
+      "x": 80,
+      "resolved_y": 64
+    },
+    {
+      "index": 6,
+      "stored_y_minus_0x20": 48,
+      "x": 64,
+      "resolved_y": 80
+    },
+    {
+      "index": 7,
+      "stored_y_minus_0x20": 48,
+      "x": 48,
+      "resolved_y": 80
+    },
+    {
+      "index": 8,
+      "stored_y_minus_0x20": 64,
+      "x": 48,
+      "resolved_y": 96
+    },
+    {
+      "index": 9,
+      "stored_y_minus_0x20": 64,
+      "x": 64,
+      "resolved_y": 96
+    },
+    {
+      "index": 10,
+      "stored_y_minus_0x20": 48,
+      "x": 16,
+      "resolved_y": 80
+    },
+    {
+      "index": 11,
+      "stored_y_minus_0x20": 32,
+      "x": 16,
+      "resolved_y": 64
+    },
+    {
+      "index": 12,
+      "stored_y_minus_0x20": 16,
+      "x": 16,
+      "resolved_y": 48
+    },
+    {
+      "index": 13,
+      "stored_y_minus_0x20": 16,
+      "x": 32,
+      "resolved_y": 48
+    },
+    {
+      "index": 14,
+      "stored_y_minus_0x20": 16,
+      "x": 48,
+      "resolved_y": 48
+    },
+    {
+      "index": 15,
+      "stored_y_minus_0x20": 16,
+      "x": 144,
+      "resolved_y": 48
+    },
+    {
+      "index": 16,
+      "stored_y_minus_0x20": 16,
+      "x": 160,
+      "resolved_y": 48
+    },
+    {
+      "index": 17,
+      "stored_y_minus_0x20": 16,
+      "x": 176,
+      "resolved_y": 48
+    },
+    {
+      "index": 18,
+      "stored_y_minus_0x20": 32,
+      "x": 176,
+      "resolved_y": 64
+    },
+    {
+      "index": 19,
+      "stored_y_minus_0x20": 48,
+      "x": 176,
+      "resolved_y": 80
+    }
+  ]
+}

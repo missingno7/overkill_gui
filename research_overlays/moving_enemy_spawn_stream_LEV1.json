@@ -1,0 +1,1413 @@
+{
+  "_meta": {
+    "source": "moving_enemy_spawn_streams_all_levels.json",
+    "stream_index": 1,
+    "confirmed_correspondence": "LEV1/Edrax due to blue behavior 0x2D formation record at trigger 130."
+  },
+  "records": [
+    {
+      "raw_record_start": 77303,
+      "raw_record_start_hex": "0x12DF7",
+      "trigger": 272,
+      "approx_canonical_row_inferred_288_minus_trigger": 16,
+      "descriptor_ptr": 53496,
+      "descriptor_ptr_hex": "0xD0F8",
+      "base_x": 192,
+      "base_y": 224,
+      "special_marker_FFFF_before_descriptor_ptr": false,
+      "descriptor_behavior": 31,
+      "descriptor_behavior_hex": "0x1F",
+      "descriptor_count": 1,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 192,
+          "y": 224
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77311,
+      "raw_record_start_hex": "0x12DFF",
+      "trigger": 266,
+      "approx_canonical_row_inferred_288_minus_trigger": 22,
+      "descriptor_ptr": 53568,
+      "descriptor_ptr_hex": "0xD140",
+      "base_x": 0,
+      "base_y": -16,
+      "special_marker_FFFF_before_descriptor_ptr": false,
+      "descriptor_behavior": 25,
+      "descriptor_behavior_hex": "0x19",
+      "descriptor_count": 3,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": -16
+        },
+        {
+          "dx": 0,
+          "dy": -32
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 0,
+          "y": -16
+        },
+        {
+          "x": 0,
+          "y": -32
+        },
+        {
+          "x": 0,
+          "y": -48
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77319,
+      "raw_record_start_hex": "0x12E07",
+      "trigger": 250,
+      "approx_canonical_row_inferred_288_minus_trigger": 38,
+      "descriptor_ptr": 53608,
+      "descriptor_ptr_hex": "0xD168",
+      "base_x": 112,
+      "base_y": -16,
+      "special_marker_FFFF_before_descriptor_ptr": false,
+      "descriptor_behavior": 39,
+      "descriptor_behavior_hex": "0x27",
+      "descriptor_count": 8,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        },
+        {
+          "dx": 16,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": -16
+        },
+        {
+          "dx": 16,
+          "dy": -16
+        },
+        {
+          "dx": 0,
+          "dy": -32
+        },
+        {
+          "dx": 16,
+          "dy": -32
+        },
+        {
+          "dx": 0,
+          "dy": -48
+        },
+        {
+          "dx": 16,
+          "dy": -48
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 112,
+          "y": -16
+        },
+        {
+          "x": 128,
+          "y": -16
+        },
+        {
+          "x": 112,
+          "y": -32
+        },
+        {
+          "x": 128,
+          "y": -32
+        },
+        {
+          "x": 112,
+          "y": -48
+        },
+        {
+          "x": 128,
+          "y": -48
+        },
+        {
+          "x": 112,
+          "y": -64
+        },
+        {
+          "x": 128,
+          "y": -64
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77327,
+      "raw_record_start_hex": "0x12E0F",
+      "trigger": 237,
+      "approx_canonical_row_inferred_288_minus_trigger": 51,
+      "descriptor_ptr": 53648,
+      "descriptor_ptr_hex": "0xD190",
+      "base_x": 32,
+      "base_y": -16,
+      "special_marker_FFFF_before_descriptor_ptr": false,
+      "descriptor_behavior": 26,
+      "descriptor_behavior_hex": "0x1A",
+      "descriptor_count": 3,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": -16
+        },
+        {
+          "dx": 0,
+          "dy": -32
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 32,
+          "y": -16
+        },
+        {
+          "x": 32,
+          "y": -32
+        },
+        {
+          "x": 32,
+          "y": -48
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77335,
+      "raw_record_start_hex": "0x12E17",
+      "trigger": 220,
+      "approx_canonical_row_inferred_288_minus_trigger": 68,
+      "descriptor_ptr": 53556,
+      "descriptor_ptr_hex": "0xD134",
+      "base_x": 0,
+      "base_y": -16,
+      "special_marker_FFFF_before_descriptor_ptr": false,
+      "descriptor_behavior": 47,
+      "descriptor_behavior_hex": "0x2F",
+      "descriptor_count": 1,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 0,
+          "y": -16
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77343,
+      "raw_record_start_hex": "0x12E1F",
+      "trigger": 207,
+      "approx_canonical_row_inferred_288_minus_trigger": 81,
+      "descriptor_ptr": 53128,
+      "descriptor_ptr_hex": "0xCF88",
+      "base_x": 176,
+      "base_y": -16,
+      "special_marker_FFFF_before_descriptor_ptr": false,
+      "descriptor_behavior": 17,
+      "descriptor_behavior_hex": "0x11",
+      "descriptor_count": 6,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": -16
+        },
+        {
+          "dx": 0,
+          "dy": -32
+        },
+        {
+          "dx": 0,
+          "dy": -48
+        },
+        {
+          "dx": 0,
+          "dy": -64
+        },
+        {
+          "dx": 0,
+          "dy": -80
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 176,
+          "y": -16
+        },
+        {
+          "x": 176,
+          "y": -32
+        },
+        {
+          "x": 176,
+          "y": -48
+        },
+        {
+          "x": 176,
+          "y": -64
+        },
+        {
+          "x": 176,
+          "y": -80
+        },
+        {
+          "x": 176,
+          "y": -96
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77351,
+      "raw_record_start_hex": "0x12E27",
+      "trigger": 187,
+      "approx_canonical_row_inferred_288_minus_trigger": 101,
+      "descriptor_ptr": 53648,
+      "descriptor_ptr_hex": "0xD190",
+      "base_x": 192,
+      "base_y": -16,
+      "special_marker_FFFF_before_descriptor_ptr": false,
+      "descriptor_behavior": 26,
+      "descriptor_behavior_hex": "0x1A",
+      "descriptor_count": 3,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": -16
+        },
+        {
+          "dx": 0,
+          "dy": -32
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 192,
+          "y": -16
+        },
+        {
+          "x": 192,
+          "y": -32
+        },
+        {
+          "x": 192,
+          "y": -48
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77359,
+      "raw_record_start_hex": "0x12E2F",
+      "trigger": 162,
+      "approx_canonical_row_inferred_288_minus_trigger": 126,
+      "descriptor_ptr": 53412,
+      "descriptor_ptr_hex": "0xD0A4",
+      "base_x": 32,
+      "base_y": -16,
+      "special_marker_FFFF_before_descriptor_ptr": false,
+      "descriptor_behavior": 48,
+      "descriptor_behavior_hex": "0x30",
+      "descriptor_count": 1,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 32,
+          "y": -16
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77367,
+      "raw_record_start_hex": "0x12E37",
+      "trigger": 154,
+      "approx_canonical_row_inferred_288_minus_trigger": 134,
+      "descriptor_ptr": 53608,
+      "descriptor_ptr_hex": "0xD168",
+      "base_x": 160,
+      "base_y": -16,
+      "special_marker_FFFF_before_descriptor_ptr": false,
+      "descriptor_behavior": 39,
+      "descriptor_behavior_hex": "0x27",
+      "descriptor_count": 8,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        },
+        {
+          "dx": 16,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": -16
+        },
+        {
+          "dx": 16,
+          "dy": -16
+        },
+        {
+          "dx": 0,
+          "dy": -32
+        },
+        {
+          "dx": 16,
+          "dy": -32
+        },
+        {
+          "dx": 0,
+          "dy": -48
+        },
+        {
+          "dx": 16,
+          "dy": -48
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 160,
+          "y": -16
+        },
+        {
+          "x": 176,
+          "y": -16
+        },
+        {
+          "x": 160,
+          "y": -32
+        },
+        {
+          "x": 176,
+          "y": -32
+        },
+        {
+          "x": 160,
+          "y": -48
+        },
+        {
+          "x": 176,
+          "y": -48
+        },
+        {
+          "x": 160,
+          "y": -64
+        },
+        {
+          "x": 176,
+          "y": -64
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77375,
+      "raw_record_start_hex": "0x12E3F",
+      "trigger": 152,
+      "approx_canonical_row_inferred_288_minus_trigger": 136,
+      "descriptor_ptr": 53608,
+      "descriptor_ptr_hex": "0xD168",
+      "base_x": 160,
+      "base_y": -16,
+      "special_marker_FFFF_before_descriptor_ptr": false,
+      "descriptor_behavior": 39,
+      "descriptor_behavior_hex": "0x27",
+      "descriptor_count": 8,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        },
+        {
+          "dx": 16,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": -16
+        },
+        {
+          "dx": 16,
+          "dy": -16
+        },
+        {
+          "dx": 0,
+          "dy": -32
+        },
+        {
+          "dx": 16,
+          "dy": -32
+        },
+        {
+          "dx": 0,
+          "dy": -48
+        },
+        {
+          "dx": 16,
+          "dy": -48
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 160,
+          "y": -16
+        },
+        {
+          "x": 176,
+          "y": -16
+        },
+        {
+          "x": 160,
+          "y": -32
+        },
+        {
+          "x": 176,
+          "y": -32
+        },
+        {
+          "x": 160,
+          "y": -48
+        },
+        {
+          "x": 176,
+          "y": -48
+        },
+        {
+          "x": 160,
+          "y": -64
+        },
+        {
+          "x": 176,
+          "y": -64
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77383,
+      "raw_record_start_hex": "0x12E47",
+      "trigger": 146,
+      "approx_canonical_row_inferred_288_minus_trigger": 142,
+      "descriptor_ptr": 53532,
+      "descriptor_ptr_hex": "0xD11C",
+      "base_x": 96,
+      "base_y": -16,
+      "special_marker_FFFF_before_descriptor_ptr": false,
+      "descriptor_behavior": 137,
+      "descriptor_behavior_hex": "0x89",
+      "descriptor_count": 4,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": -32
+        },
+        {
+          "dx": 32,
+          "dy": 0
+        },
+        {
+          "dx": 32,
+          "dy": -32
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 96,
+          "y": -16
+        },
+        {
+          "x": 96,
+          "y": -48
+        },
+        {
+          "x": 128,
+          "y": -16
+        },
+        {
+          "x": 128,
+          "y": -48
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77391,
+      "raw_record_start_hex": "0x12E4F",
+      "trigger": 130,
+      "approx_canonical_row_inferred_288_minus_trigger": 158,
+      "descriptor_ptr": 53424,
+      "descriptor_ptr_hex": "0xD0B0",
+      "base_x": 64,
+      "base_y": -16,
+      "special_marker_FFFF_before_descriptor_ptr": false,
+      "descriptor_behavior": 45,
+      "descriptor_behavior_hex": "0x2D",
+      "descriptor_count": 4,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        },
+        {
+          "dx": 16,
+          "dy": -16
+        },
+        {
+          "dx": 48,
+          "dy": -16
+        },
+        {
+          "dx": 64,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 64,
+          "y": -16
+        },
+        {
+          "x": 80,
+          "y": -32
+        },
+        {
+          "x": 112,
+          "y": -32
+        },
+        {
+          "x": 128,
+          "y": -16
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77399,
+      "raw_record_start_hex": "0x12E57",
+      "trigger": 110,
+      "approx_canonical_row_inferred_288_minus_trigger": 178,
+      "descriptor_ptr": 53052,
+      "descriptor_ptr_hex": "0xCF3C",
+      "base_x": 16,
+      "base_y": -16,
+      "special_marker_FFFF_before_descriptor_ptr": false,
+      "descriptor_behavior": 49,
+      "descriptor_behavior_hex": "0x31",
+      "descriptor_count": 9,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": -16
+        },
+        {
+          "dx": 0,
+          "dy": -32
+        },
+        {
+          "dx": 0,
+          "dy": -48
+        },
+        {
+          "dx": 0,
+          "dy": -64
+        },
+        {
+          "dx": 0,
+          "dy": -80
+        },
+        {
+          "dx": 0,
+          "dy": -96
+        },
+        {
+          "dx": 0,
+          "dy": -112
+        },
+        {
+          "dx": 0,
+          "dy": -128
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 16,
+          "y": -16
+        },
+        {
+          "x": 16,
+          "y": -32
+        },
+        {
+          "x": 16,
+          "y": -48
+        },
+        {
+          "x": 16,
+          "y": -64
+        },
+        {
+          "x": 16,
+          "y": -80
+        },
+        {
+          "x": 16,
+          "y": -96
+        },
+        {
+          "x": 16,
+          "y": -112
+        },
+        {
+          "x": 16,
+          "y": -128
+        },
+        {
+          "x": 16,
+          "y": -144
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77407,
+      "raw_record_start_hex": "0x12E5F",
+      "trigger": 110,
+      "approx_canonical_row_inferred_288_minus_trigger": 178,
+      "descriptor_ptr": 53052,
+      "descriptor_ptr_hex": "0xCF3C",
+      "base_x": 176,
+      "base_y": -16,
+      "special_marker_FFFF_before_descriptor_ptr": false,
+      "descriptor_behavior": 49,
+      "descriptor_behavior_hex": "0x31",
+      "descriptor_count": 9,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": -16
+        },
+        {
+          "dx": 0,
+          "dy": -32
+        },
+        {
+          "dx": 0,
+          "dy": -48
+        },
+        {
+          "dx": 0,
+          "dy": -64
+        },
+        {
+          "dx": 0,
+          "dy": -80
+        },
+        {
+          "dx": 0,
+          "dy": -96
+        },
+        {
+          "dx": 0,
+          "dy": -112
+        },
+        {
+          "dx": 0,
+          "dy": -128
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 176,
+          "y": -16
+        },
+        {
+          "x": 176,
+          "y": -32
+        },
+        {
+          "x": 176,
+          "y": -48
+        },
+        {
+          "x": 176,
+          "y": -64
+        },
+        {
+          "x": 176,
+          "y": -80
+        },
+        {
+          "x": 176,
+          "y": -96
+        },
+        {
+          "x": 176,
+          "y": -112
+        },
+        {
+          "x": 176,
+          "y": -128
+        },
+        {
+          "x": 176,
+          "y": -144
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77415,
+      "raw_record_start_hex": "0x12E67",
+      "trigger": 103,
+      "approx_canonical_row_inferred_288_minus_trigger": 185,
+      "descriptor_ptr": 53556,
+      "descriptor_ptr_hex": "0xD134",
+      "base_x": 0,
+      "base_y": -16,
+      "special_marker_FFFF_before_descriptor_ptr": false,
+      "descriptor_behavior": 47,
+      "descriptor_behavior_hex": "0x2F",
+      "descriptor_count": 1,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 0,
+          "y": -16
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77423,
+      "raw_record_start_hex": "0x12E6F",
+      "trigger": 100,
+      "approx_canonical_row_inferred_288_minus_trigger": 188,
+      "descriptor_ptr": 53412,
+      "descriptor_ptr_hex": "0xD0A4",
+      "base_x": 176,
+      "base_y": -16,
+      "special_marker_FFFF_before_descriptor_ptr": false,
+      "descriptor_behavior": 48,
+      "descriptor_behavior_hex": "0x30",
+      "descriptor_count": 1,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 176,
+          "y": -16
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77431,
+      "raw_record_start_hex": "0x12E77",
+      "trigger": 91,
+      "approx_canonical_row_inferred_288_minus_trigger": 197,
+      "descriptor_ptr": 53372,
+      "descriptor_ptr_hex": "0xD07C",
+      "base_x": 128,
+      "base_y": -16,
+      "special_marker_FFFF_before_descriptor_ptr": false,
+      "descriptor_behavior": 50,
+      "descriptor_behavior_hex": "0x32",
+      "descriptor_count": 3,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        },
+        {
+          "dx": 16,
+          "dy": 0
+        },
+        {
+          "dx": 32,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 128,
+          "y": -16
+        },
+        {
+          "x": 144,
+          "y": -16
+        },
+        {
+          "x": 160,
+          "y": -16
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77439,
+      "raw_record_start_hex": "0x12E7F",
+      "trigger": 70,
+      "approx_canonical_row_inferred_288_minus_trigger": 218,
+      "descriptor_ptr": 53336,
+      "descriptor_ptr_hex": "0xD058",
+      "base_x": 96,
+      "base_y": 0,
+      "special_marker_FFFF_before_descriptor_ptr": true,
+      "descriptor_behavior": 53,
+      "descriptor_behavior_hex": "0x35",
+      "descriptor_count": 1,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 96,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77449,
+      "raw_record_start_hex": "0x12E89",
+      "trigger": 63,
+      "approx_canonical_row_inferred_288_minus_trigger": 225,
+      "descriptor_ptr": 53096,
+      "descriptor_ptr_hex": "0xCF68",
+      "base_x": 16,
+      "base_y": -16,
+      "special_marker_FFFF_before_descriptor_ptr": false,
+      "descriptor_behavior": 16,
+      "descriptor_behavior_hex": "0x10",
+      "descriptor_count": 6,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": -16
+        },
+        {
+          "dx": 0,
+          "dy": -32
+        },
+        {
+          "dx": 0,
+          "dy": -48
+        },
+        {
+          "dx": 0,
+          "dy": -64
+        },
+        {
+          "dx": 0,
+          "dy": -80
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 16,
+          "y": -16
+        },
+        {
+          "x": 16,
+          "y": -32
+        },
+        {
+          "x": 16,
+          "y": -48
+        },
+        {
+          "x": 16,
+          "y": -64
+        },
+        {
+          "x": 16,
+          "y": -80
+        },
+        {
+          "x": 16,
+          "y": -96
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77457,
+      "raw_record_start_hex": "0x12E91",
+      "trigger": 60,
+      "approx_canonical_row_inferred_288_minus_trigger": 228,
+      "descriptor_ptr": 53272,
+      "descriptor_ptr_hex": "0xD018",
+      "base_x": 0,
+      "base_y": -16,
+      "special_marker_FFFF_before_descriptor_ptr": true,
+      "descriptor_behavior": 131,
+      "descriptor_behavior_hex": "0x83",
+      "descriptor_count": 1,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 0,
+          "y": -16
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77467,
+      "raw_record_start_hex": "0x12E9B",
+      "trigger": 59,
+      "approx_canonical_row_inferred_288_minus_trigger": 229,
+      "descriptor_ptr": 53272,
+      "descriptor_ptr_hex": "0xD018",
+      "base_x": 0,
+      "base_y": -16,
+      "special_marker_FFFF_before_descriptor_ptr": true,
+      "descriptor_behavior": 131,
+      "descriptor_behavior_hex": "0x83",
+      "descriptor_count": 1,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 0,
+          "y": -16
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77477,
+      "raw_record_start_hex": "0x12EA5",
+      "trigger": 49,
+      "approx_canonical_row_inferred_288_minus_trigger": 239,
+      "descriptor_ptr": 53284,
+      "descriptor_ptr_hex": "0xD024",
+      "base_x": 0,
+      "base_y": 0,
+      "special_marker_FFFF_before_descriptor_ptr": true,
+      "descriptor_behavior": 56,
+      "descriptor_behavior_hex": "0x38",
+      "descriptor_count": 1,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77487,
+      "raw_record_start_hex": "0x12EAF",
+      "trigger": 46,
+      "approx_canonical_row_inferred_288_minus_trigger": 242,
+      "descriptor_ptr": 53336,
+      "descriptor_ptr_hex": "0xD058",
+      "base_x": 80,
+      "base_y": 0,
+      "special_marker_FFFF_before_descriptor_ptr": true,
+      "descriptor_behavior": 53,
+      "descriptor_behavior_hex": "0x35",
+      "descriptor_count": 1,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 80,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77497,
+      "raw_record_start_hex": "0x12EB9",
+      "trigger": 46,
+      "approx_canonical_row_inferred_288_minus_trigger": 242,
+      "descriptor_ptr": 53348,
+      "descriptor_ptr_hex": "0xD064",
+      "base_x": 96,
+      "base_y": 0,
+      "special_marker_FFFF_before_descriptor_ptr": true,
+      "descriptor_behavior": 54,
+      "descriptor_behavior_hex": "0x36",
+      "descriptor_count": 1,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 96,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77507,
+      "raw_record_start_hex": "0x12EC3",
+      "trigger": 46,
+      "approx_canonical_row_inferred_288_minus_trigger": 242,
+      "descriptor_ptr": 53336,
+      "descriptor_ptr_hex": "0xD058",
+      "base_x": 112,
+      "base_y": 0,
+      "special_marker_FFFF_before_descriptor_ptr": true,
+      "descriptor_behavior": 53,
+      "descriptor_behavior_hex": "0x35",
+      "descriptor_count": 1,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 112,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77517,
+      "raw_record_start_hex": "0x12ECD",
+      "trigger": 42,
+      "approx_canonical_row_inferred_288_minus_trigger": 246,
+      "descriptor_ptr": 53284,
+      "descriptor_ptr_hex": "0xD024",
+      "base_x": 0,
+      "base_y": 0,
+      "special_marker_FFFF_before_descriptor_ptr": true,
+      "descriptor_behavior": 56,
+      "descriptor_behavior_hex": "0x38",
+      "descriptor_count": 1,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77527,
+      "raw_record_start_hex": "0x12ED7",
+      "trigger": 37,
+      "approx_canonical_row_inferred_288_minus_trigger": 251,
+      "descriptor_ptr": 53284,
+      "descriptor_ptr_hex": "0xD024",
+      "base_x": 192,
+      "base_y": 0,
+      "special_marker_FFFF_before_descriptor_ptr": true,
+      "descriptor_behavior": 56,
+      "descriptor_behavior_hex": "0x38",
+      "descriptor_count": 1,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 192,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77537,
+      "raw_record_start_hex": "0x12EE1",
+      "trigger": 31,
+      "approx_canonical_row_inferred_288_minus_trigger": 257,
+      "descriptor_ptr": 53272,
+      "descriptor_ptr_hex": "0xD018",
+      "base_x": 0,
+      "base_y": 0,
+      "special_marker_FFFF_before_descriptor_ptr": true,
+      "descriptor_behavior": 131,
+      "descriptor_behavior_hex": "0x83",
+      "descriptor_count": 1,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77547,
+      "raw_record_start_hex": "0x12EEB",
+      "trigger": 31,
+      "approx_canonical_row_inferred_288_minus_trigger": 257,
+      "descriptor_ptr": 53284,
+      "descriptor_ptr_hex": "0xD024",
+      "base_x": 0,
+      "base_y": 0,
+      "special_marker_FFFF_before_descriptor_ptr": true,
+      "descriptor_behavior": 56,
+      "descriptor_behavior_hex": "0x38",
+      "descriptor_count": 1,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77557,
+      "raw_record_start_hex": "0x12EF5",
+      "trigger": 30,
+      "approx_canonical_row_inferred_288_minus_trigger": 258,
+      "descriptor_ptr": 53308,
+      "descriptor_ptr_hex": "0xD03C",
+      "base_x": 64,
+      "base_y": 0,
+      "special_marker_FFFF_before_descriptor_ptr": false,
+      "descriptor_behavior": 55,
+      "descriptor_behavior_hex": "0x37",
+      "descriptor_count": 5,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        },
+        {
+          "dx": 16,
+          "dy": 0
+        },
+        {
+          "dx": 32,
+          "dy": 0
+        },
+        {
+          "dx": 48,
+          "dy": 0
+        },
+        {
+          "dx": 64,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 64,
+          "y": 0
+        },
+        {
+          "x": 80,
+          "y": 0
+        },
+        {
+          "x": 96,
+          "y": 0
+        },
+        {
+          "x": 112,
+          "y": 0
+        },
+        {
+          "x": 128,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77565,
+      "raw_record_start_hex": "0x12EFD",
+      "trigger": 27,
+      "approx_canonical_row_inferred_288_minus_trigger": 261,
+      "descriptor_ptr": 53272,
+      "descriptor_ptr_hex": "0xD018",
+      "base_x": 0,
+      "base_y": 0,
+      "special_marker_FFFF_before_descriptor_ptr": true,
+      "descriptor_behavior": 131,
+      "descriptor_behavior_hex": "0x83",
+      "descriptor_count": 1,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77575,
+      "raw_record_start_hex": "0x12F07",
+      "trigger": 27,
+      "approx_canonical_row_inferred_288_minus_trigger": 261,
+      "descriptor_ptr": 53448,
+      "descriptor_ptr_hex": "0xD0C8",
+      "base_x": 144,
+      "base_y": -16,
+      "special_marker_FFFF_before_descriptor_ptr": false,
+      "descriptor_behavior": 52,
+      "descriptor_behavior_hex": "0x34",
+      "descriptor_count": 1,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 144,
+          "y": -16
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77583,
+      "raw_record_start_hex": "0x12F0F",
+      "trigger": 25,
+      "approx_canonical_row_inferred_288_minus_trigger": 263,
+      "descriptor_ptr": 53272,
+      "descriptor_ptr_hex": "0xD018",
+      "base_x": 32,
+      "base_y": 0,
+      "special_marker_FFFF_before_descriptor_ptr": true,
+      "descriptor_behavior": 131,
+      "descriptor_behavior_hex": "0x83",
+      "descriptor_count": 1,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 32,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "raw_record_start": 77593,
+      "raw_record_start_hex": "0x12F19",
+      "trigger": 4,
+      "approx_canonical_row_inferred_288_minus_trigger": 284,
+      "descriptor_ptr": 53360,
+      "descriptor_ptr_hex": "0xD070",
+      "base_x": 112,
+      "base_y": 0,
+      "special_marker_FFFF_before_descriptor_ptr": false,
+      "descriptor_behavior": 33,
+      "descriptor_behavior_hex": "0x21",
+      "descriptor_count": 1,
+      "descriptor_offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "spawn_points_at_event_anchor_screen_space": [
+        {
+          "x": 112,
+          "y": 0
+        }
+      ]
+    }
+  ]
+}

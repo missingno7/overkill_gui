@@ -1,0 +1,171 @@
+    9e89:	b9 24 00             	mov    $0x24,%cx
+    9e8c:	51                   	push   %cx
+    9e8d:	8b d9                	mov    %cx,%bx
+    9e8f:	d1 e3                	shl    $1,%bx
+    9e91:	8b af ca 32          	mov    0x32ca(%bx),%bp
+    9e95:	83 7e 00 00          	cmpw   $0x0,0x0(%bp)
+    9e99:	74 03                	je     0x9e9e
+    9e9b:	e8 6d b2             	call   0x510b
+    9e9e:	59                   	pop    %cx
+    9e9f:	e2 eb                	loop   0x9e8c
+    9ea1:	b9 22 00             	mov    $0x22,%cx
+    9ea4:	51                   	push   %cx
+    9ea5:	8b d9                	mov    %cx,%bx
+    9ea7:	d1 e3                	shl    $1,%bx
+    9ea9:	8b af 12 8d          	mov    -0x72ee(%bx),%bp
+    9ead:	83 7e 00 00          	cmpw   $0x0,0x0(%bp)
+    9eb1:	74 03                	je     0x9eb6
+    9eb3:	e8 55 b2             	call   0x510b
+    9eb6:	59                   	pop    %cx
+    9eb7:	e2 eb                	loop   0x9ea4
+    9eb9:	e8 74 a4             	call   0x4330
+    9ebc:	b9 22 00             	mov    $0x22,%cx
+    9ebf:	51                   	push   %cx
+    9ec0:	8b d9                	mov    %cx,%bx
+    9ec2:	d1 e3                	shl    $1,%bx
+    9ec4:	8b af 12 8d          	mov    -0x72ee(%bx),%bp
+    9ec8:	83 7e 00 00          	cmpw   $0x0,0x0(%bp)
+    9ecc:	74 03                	je     0x9ed1
+    9ece:	e8 b8 ce             	call   0x6d89
+    9ed1:	59                   	pop    %cx
+    9ed2:	e2 eb                	loop   0x9ebf
+    9ed4:	b9 23 00             	mov    $0x23,%cx
+    9ed7:	51                   	push   %cx
+    9ed8:	8b d9                	mov    %cx,%bx
+    9eda:	d1 e3                	shl    $1,%bx
+    9edc:	8b af ca 32          	mov    0x32ca(%bx),%bp
+    9ee0:	83 7e 00 00          	cmpw   $0x0,0x0(%bp)
+    9ee4:	74 1e                	je     0x9f04
+    9ee6:	83 3e ac bd 01       	cmpw   $0x1,-0x4254
+    9eeb:	74 0e                	je     0x9efb
+    9eed:	81 3e 50 23 b6 00    	cmpw   $0xb6,0x2350
+    9ef3:	77 06                	ja     0x9efb
+    9ef5:	83 7e 16 01          	cmpw   $0x1,0x16(%bp)
+    9ef9:	74 09                	je     0x9f04
+    9efb:	83 7e 0a 00          	cmpw   $0x0,0xa(%bp)
+    9eff:	75 03                	jne    0x9f04
+    9f01:	e8 d5 cc             	call   0x6bd9
+    9f04:	59                   	pop    %cx
+    9f05:	e2 d0                	loop   0x9ed7
+    9f07:	b9 24 00             	mov    $0x24,%cx
+    9f0a:	51                   	push   %cx
+    9f0b:	8b d9                	mov    %cx,%bx
+    9f0d:	d1 e3                	shl    $1,%bx
+    9f0f:	8b af ca 32          	mov    0x32ca(%bx),%bp
+    9f13:	83 7e 00 00          	cmpw   $0x0,0x0(%bp)
+    9f17:	74 1e                	je     0x9f37
+    9f19:	83 3e ac bd 01       	cmpw   $0x1,-0x4254
+    9f1e:	74 0e                	je     0x9f2e
+    9f20:	81 3e 50 23 b6 00    	cmpw   $0xb6,0x2350
+    9f26:	77 06                	ja     0x9f2e
+    9f28:	83 7e 16 01          	cmpw   $0x1,0x16(%bp)
+    9f2c:	74 09                	je     0x9f37
+    9f2e:	83 7e 0a 01          	cmpw   $0x1,0xa(%bp)
+    9f32:	75 03                	jne    0x9f37
+    9f34:	e8 a2 cc             	call   0x6bd9
+    9f37:	59                   	pop    %cx
+    9f38:	e2 d0                	loop   0x9f0a
+    9f3a:	83 3e 7c a4 00       	cmpw   $0x0,-0x5b84
+    9f3f:	75 01                	jne    0x9f42
+    9f41:	c3                   	ret
+    9f42:	8b 2e 88 97          	mov    -0x6878,%bp
+    9f46:	83 fd ff             	cmp    $0xffff,%bp
+    9f49:	74 03                	je     0x9f4e
+    9f4b:	e8 8b cc             	call   0x6bd9
+    9f4e:	c3                   	ret
+    9f4f:	b9 22 00             	mov    $0x22,%cx
+    9f52:	51                   	push   %cx
+    9f53:	8b d9                	mov    %cx,%bx
+    9f55:	d1 e3                	shl    $1,%bx
+    9f57:	8b af 12 8d          	mov    -0x72ee(%bx),%bp
+    9f5b:	83 7e 00 00          	cmpw   $0x0,0x0(%bp)
+    9f5f:	74 03                	je     0x9f64
+    9f61:	e8 71 b1             	call   0x50d5
+    9f64:	59                   	pop    %cx
+    9f65:	e2 eb                	loop   0x9f52
+    9f67:	b9 24 00             	mov    $0x24,%cx
+    9f6a:	51                   	push   %cx
+    9f6b:	8b d9                	mov    %cx,%bx
+    9f6d:	d1 e3                	shl    $1,%bx
+    9f6f:	8b af ca 32          	mov    0x32ca(%bx),%bp
+    9f73:	83 7e 00 00          	cmpw   $0x0,0x0(%bp)
+    9f77:	74 03                	je     0x9f7c
+    9f79:	e8 59 b1             	call   0x50d5
+    9f7c:	59                   	pop    %cx
+    9f7d:	e2 eb                	loop   0x9f6a
+    9f7f:	e8 25 a4             	call   0x43a7
+    9f82:	c3                   	ret
+    9f83:	83 3e ce a8 ff       	cmpw   $0xffff,-0x5732
+    9f88:	74 04                	je     0x9f8e
+    9f8a:	ff 06 ce a8          	incw   -0x5732
+    9f8e:	a1 c8 a8             	mov    0xa8c8,%ax
+    9f91:	a3 c6 a8             	mov    %ax,0xa8c6
+    9f94:	a1 cc a8             	mov    0xa8cc,%ax
+    9f97:	a3 ca a8             	mov    %ax,0xa8ca
+    9f9a:	c7 06 cc a8 00 00    	movw   $0x0,-0x5734
+    9fa0:	83 3e 56 23 05       	cmpw   $0x5,0x2356
+    9fa5:	75 59                	jne    0xa000
+    9fa7:	80 3e a2 98 00       	cmpb   $0x0,-0x675e
+    9fac:	74 10                	je     0x9fbe
+    9fae:	f7 1e aa 98          	negw   -0x6756
+    9fb2:	c6 06 a2 98 00       	movb   $0x0,-0x675e
+    9fb7:	c6 06 a4 98 01       	movb   $0x1,-0x675c
+    9fbc:	eb 05                	jmp    0x9fc3
+    9fbe:	c6 06 a4 98 00       	movb   $0x0,-0x675c
+    9fc3:	32 c9                	xor    %cl,%cl
+    9fc5:	80 3e a5 98 00       	cmpb   $0x0,-0x675b
+    9fca:	74 20                	je     0x9fec
+    9fcc:	fe 0e a5 98          	decb   -0x675b
+    9fd0:	75 24                	jne    0x9ff6
+    9fd2:	a1 7e a4             	mov    0xa47e,%ax
+    9fd5:	b1 0a                	mov    $0xa,%cl
+    9fd7:	3d 10 00             	cmp    $0x10,%ax
+    9fda:	77 10                	ja     0x9fec
+    9fdc:	b1 06                	mov    $0x6,%cl
+    9fde:	3d 08 00             	cmp    $0x8,%ax
+    9fe1:	77 09                	ja     0x9fec
+    9fe3:	b1 04                	mov    $0x4,%cl
+    9fe5:	3d 04 00             	cmp    $0x4,%ax
+    9fe8:	77 02                	ja     0x9fec
+    9fea:	b1 01                	mov    $0x1,%cl
+    9fec:	88 0e a5 98          	mov    %cl,-0x675b
+    9ff0:	fe 06 a3 98          	incb   -0x675d
+    9ff4:	eb 05                	jmp    0x9ffb
+    9ff6:	c6 06 a3 98 00       	movb   $0x0,-0x675d
+    9ffb:	9a 1d 08 7f 0f       	lcall  $0xf7f,$0x81d
+    a000:	c6 06 a9 98 00       	movb   $0x0,-0x6757
+    a005:	80 3e a8 98 00       	cmpb   $0x0,-0x6758
+    a00a:	74 0a                	je     0xa016
+    a00c:	c6 06 a8 98 00       	movb   $0x0,-0x6758
+    a011:	c6 06 a9 98 01       	movb   $0x1,-0x6757
+    a016:	83 3e c2 a8 01       	cmpw   $0x1,-0x573e
+    a01b:	75 03                	jne    0xa020
+    a01d:	e8 ba 4d             	call   0xedda
+    a020:	b9 23 00             	mov    $0x23,%cx
+    a023:	51                   	push   %cx
+    a024:	8b d9                	mov    %cx,%bx
+    a026:	d1 e3                	shl    $1,%bx
+    a028:	8b af ca 32          	mov    0x32ca(%bx),%bp
+    a02c:	ff 06 40 23          	incw   0x2340
+    a030:	81 3e 40 23 dc 05    	cmpw   $0x5dc,0x2340
+    a036:	72 06                	jb     0xa03e
+    a038:	c7 06 40 23 00 00    	movw   $0x0,0x2340
+    a03e:	83 7e 00 00          	cmpw   $0x0,0x0(%bp)
+    a042:	74 03                	je     0xa047
+    a044:	e8 27 00             	call   0xa06e
+    a047:	59                   	pop    %cx
+    a048:	e2 d9                	loop   0xa023
+    a04a:	c7 06 46 23 00 00    	movw   $0x0,0x2346
+    a050:	b9 22 00             	mov    $0x22,%cx
+    a053:	51                   	push   %cx
+    a054:	8b d9                	mov    %cx,%bx
+    a056:	d1 e3                	shl    $1,%bx
+    a058:	8b af 12 8d          	mov    -0x72ee(%bx),%bp
+    a05c:	83 7e 00 00          	cmpw   $0x0,0x0(%bp)
+    a060:	74 03                	je     0xa065
+    a062:	e8 09 00             	call   0xa06e
+    a065:	59                   	pop    %cx
+    a066:	e2 eb                	loop   0xa053
+    a068:	9a 22 09 7f 0f       	lcall  $0xf7f,$0x922
+    a06d:	c3                   	ret
+    a06e:	8b 5e 16             	mov    0x16(%bp),%bx

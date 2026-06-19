@@ -1,0 +1,24 @@
+    b1c1:	eb 32                	jmp    0xb1f5
+    b1c3:	c7 06 52 a9 ff ff    	movw   $0xffff,-0x56ae
+    b1c9:	eb 06                	jmp    0xb1d1
+    b1cb:	c7 06 52 a9 01 00    	movw   $0x1,-0x56ae
+    b1d1:	e8 5c 00             	call   0xb230
+    b1d4:	bb 00 00             	mov    $0x0,%bx
+    b1d7:	74 04                	je     0xb1dd
+    b1d9:	8b 1e 3c 23          	mov    0x233c,%bx
+    b1dd:	b8 61 00             	mov    $0x61,%ax
+    b1e0:	03 06 52 a9          	add    -0x56ae,%ax
+    b1e4:	03 06 52 a9          	add    -0x56ae,%ax
+    b1e8:	03 06 52 a9          	add    -0x56ae,%ax
+    b1ec:	03 06 52 a9          	add    -0x56ae,%ax
+    b1f0:	03 c3                	add    %bx,%ax
+    b1f2:	03 46 06             	add    0x6(%bp),%ax
+    b1f5:	89 46 08             	mov    %ax,0x8(%bp)
+    b1f8:	83 3e 30 23 7f       	cmpw   $0x7f,0x2330
+    b1fd:	74 0e                	je     0xb20d
+    b1ff:	83 3e 30 23 6b       	cmpw   $0x6b,0x2330
+    b204:	74 07                	je     0xb20d
+    b206:	83 3e 30 23 57       	cmpw   $0x57,0x2330
+    b20b:	75 7b                	jne    0xb288
+    b20d:	e8 a9 b8             	call   0x6ab9
+    b210:	83 fb ff             	cmp    $0xffff,%bx

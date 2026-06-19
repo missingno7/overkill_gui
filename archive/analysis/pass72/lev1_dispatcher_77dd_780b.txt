@@ -1,0 +1,21 @@
+    77dd:	3c 04                	cmp    $0x4,%al
+    77df:	75 03                	jne    0x77e4
+    77e1:	e9 f0 00             	jmp    0x78d4
+    77e4:	3c 07                	cmp    $0x7,%al
+    77e6:	75 03                	jne    0x77eb
+    77e8:	e9 f5 00             	jmp    0x78e0
+    77eb:	3c 6c                	cmp    $0x6c,%al
+    77ed:	75 03                	jne    0x77f2
+    77ef:	e9 22 01             	jmp    0x7914
+    77f2:	3c 6d                	cmp    $0x6d,%al
+    77f4:	75 03                	jne    0x77f9
+    77f6:	e9 31 01             	jmp    0x792a
+    77f9:	3c ac                	cmp    $0xac,%al
+    77fb:	75 03                	jne    0x7800
+    77fd:	e9 40 01             	jmp    0x7940
+    7800:	3c b1                	cmp    $0xb1,%al
+    7802:	75 03                	jne    0x7807
+    7804:	e9 4f 01             	jmp    0x7956
+    7807:	3c c9                	cmp    $0xc9,%al
+    7809:	74 6c                	je     0x7877
+    780b:	c3                   	ret

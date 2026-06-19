@@ -1,0 +1,857 @@
+{
+  "_meta": {
+    "scope": "Moving-enemy behavior -> sprite/frame research",
+    "status": "partial; placement is decoded, sprite assignment is now confirmed for selected behaviors and statically inferred for several more",
+    "animation_counters": {
+      "0x2338": "cycles 0..5",
+      "0x233A": "cycles 0..4",
+      "0x233C": "cycles 0..3",
+      "0x2336": "cycles 0..7",
+      "0x232A": "cycles 0..15",
+      "0x2328": "cycles 0..7"
+    },
+    "notes": [
+      "Confirmed sprite families come from runtime dumps plus supporting code formulas.",
+      "Static candidates are grounded in sprite-write formulas found in behavior handlers, but still need runtime confirmation.",
+      "Some behaviors use lookup tables or multi-phase logic; those are intentionally left as unresolved rather than over-guessed."
+    ]
+  },
+  "handler_evidence": [
+    {
+      "behavior": 16,
+      "behavior_hex": "0x10",
+      "handler_runtime_ptr": 45756,
+      "handler_runtime_ptr_hex": "0xB2BC",
+      "handler_raw_guess": 43263,
+      "handler_raw_guess_hex": "0xA8FF",
+      "handler_raw_end_guess": 43270,
+      "handler_raw_end_guess_hex": "0xA906",
+      "mapping_rule": "runtime-0x09BD",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 17,
+      "behavior_hex": "0x11",
+      "handler_runtime_ptr": 45763,
+      "handler_runtime_ptr_hex": "0xB2C3",
+      "handler_raw_guess": 43270,
+      "handler_raw_guess_hex": "0xA906",
+      "handler_raw_end_guess": 43280,
+      "handler_raw_end_guess_hex": "0xA910",
+      "mapping_rule": "runtime-0x09BD",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 19,
+      "behavior_hex": "0x13",
+      "handler_runtime_ptr": 36175,
+      "handler_runtime_ptr_hex": "0x8D4F",
+      "handler_raw_guess": 36175,
+      "handler_raw_guess_hex": "0x8D4F",
+      "handler_raw_end_guess": 36183,
+      "handler_raw_end_guess_hex": "0x8D57",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 21,
+      "behavior_hex": "0x15",
+      "handler_runtime_ptr": 36175,
+      "handler_runtime_ptr_hex": "0x8D4F",
+      "handler_raw_guess": 36175,
+      "handler_raw_guess_hex": "0x8D4F",
+      "handler_raw_end_guess": 36183,
+      "handler_raw_end_guess_hex": "0x8D57",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 25,
+      "behavior_hex": "0x19",
+      "handler_runtime_ptr": 47856,
+      "handler_runtime_ptr_hex": "0xBAF0",
+      "handler_raw_guess": 45363,
+      "handler_raw_guess_hex": "0xB133",
+      "handler_raw_end_guess": 45443,
+      "handler_raw_end_guess_hex": "0xB183",
+      "mapping_rule": "runtime-0x09BD",
+      "sprite_evidence": [
+        {
+          "raw_address": 45369,
+          "raw_address_hex": "0xB139",
+          "line": "b139:\t89 46 08             \tmov    %ax,0x8(%bp)",
+          "type": "computed",
+          "exact_sprite": null,
+          "formula": "AX = [0x233a] + 0x36",
+          "frame_family_candidate": null,
+          "context": "    b127:\tc7 46 06 04 00       \tmovw   $0x4,0x6(%bp)\n    b12c:\te8 4b 07             \tcall   0xb87a\n    b12f:\t8f 46 06             \tpop    0x6(%bp)\n    b132:\tc3                   \tret\n    b133:\ta1 3a 23             \tmov    0x233a,%ax\n    b136:\t05 36 00             \tadd    $0x36,%ax\n    b139:\t89 46 08             \tmov    %ax,0x8(%bp)"
+        }
+      ]
+    },
+    {
+      "behavior": 26,
+      "behavior_hex": "0x1A",
+      "handler_runtime_ptr": 47828,
+      "handler_runtime_ptr_hex": "0xBAD4",
+      "handler_raw_guess": 45335,
+      "handler_raw_guess_hex": "0xB117",
+      "handler_raw_end_guess": 45363,
+      "handler_raw_end_guess_hex": "0xB133",
+      "mapping_rule": "runtime-0x09BD",
+      "sprite_evidence": [
+        {
+          "raw_address": 45343,
+          "raw_address_hex": "0xB11F",
+          "line": "b11f:\t89 46 08             \tmov    %ax,0x8(%bp)",
+          "type": "computed",
+          "exact_sprite": null,
+          "formula": "AX = [0x2338] + 0x24",
+          "frame_family_candidate": null,
+          "context": "    b10f:\t05 27 00             \tadd    $0x27,%ax\n    b112:\t89 46 08             \tmov    %ax,0x8(%bp)\n    b115:\teb 0b                \tjmp    0xb122\n    b117:\ta1 38 23             \tmov    0x2338,%ax\n    b11a:\td1 e8                \tshr    $1,%ax\n    b11c:\t05 24 00             \tadd    $0x24,%ax\n    b11f:\t89 46 08             \tmov    %ax,0x8(%bp)"
+        }
+      ]
+    },
+    {
+      "behavior": 27,
+      "behavior_hex": "0x1B",
+      "handler_runtime_ptr": 47815,
+      "handler_runtime_ptr_hex": "0xBAC7",
+      "handler_raw_guess": 45322,
+      "handler_raw_guess_hex": "0xB10A",
+      "handler_raw_end_guess": 45335,
+      "handler_raw_end_guess_hex": "0xB117",
+      "mapping_rule": "runtime-0x09BD",
+      "sprite_evidence": [
+        {
+          "raw_address": 45330,
+          "raw_address_hex": "0xB112",
+          "line": "b112:\t89 46 08             \tmov    %ax,0x8(%bp)",
+          "type": "computed",
+          "exact_sprite": null,
+          "formula": "AX = [0x2338] + 0x27",
+          "frame_family_candidate": null,
+          "context": "    b0ff:\te9 8c 01             \tjmp    0xb28e\n    b102:\tc7 46 02 10 00       \tmovw   $0x10,0x2(%bp)\n    b107:\te9 84 01             \tjmp    0xb28e\n    b10a:\ta1 38 23             \tmov    0x2338,%ax\n    b10d:\td1 e8                \tshr    $1,%ax\n    b10f:\t05 27 00             \tadd    $0x27,%ax\n    b112:\t89 46 08             \tmov    %ax,0x8(%bp)"
+        }
+      ]
+    },
+    {
+      "behavior": 28,
+      "behavior_hex": "0x1C",
+      "handler_runtime_ptr": 36175,
+      "handler_runtime_ptr_hex": "0x8D4F",
+      "handler_raw_guess": 36175,
+      "handler_raw_guess_hex": "0x8D4F",
+      "handler_raw_end_guess": 36183,
+      "handler_raw_end_guess_hex": "0x8D57",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 31,
+      "behavior_hex": "0x1F",
+      "handler_runtime_ptr": 36175,
+      "handler_runtime_ptr_hex": "0x8D4F",
+      "handler_raw_guess": 36175,
+      "handler_raw_guess_hex": "0x8D4F",
+      "handler_raw_end_guess": 36183,
+      "handler_raw_end_guess_hex": "0x8D57",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 33,
+      "behavior_hex": "0x21",
+      "handler_runtime_ptr": 46422,
+      "handler_runtime_ptr_hex": "0xB556",
+      "handler_raw_guess": 43929,
+      "handler_raw_guess_hex": "0xAB99",
+      "handler_raw_end_guess": 44076,
+      "handler_raw_end_guess_hex": "0xAC2C",
+      "mapping_rule": "runtime-0x09BD",
+      "sprite_evidence": [
+        {
+          "raw_address": 43986,
+          "raw_address_hex": "0xABD2",
+          "line": "abd2:\tc7 46 08 71 00       \tmovw   $0x71,0x8(%bp)",
+          "type": "immediate",
+          "exact_sprite": 113,
+          "formula": null,
+          "frame_family_candidate": null,
+          "context": "    abbd:\t73 03                \tjae    0xabc2\n    abbf:\te9 96 00             \tjmp    0xac58\n    abc2:\t81 3e a0 a7 f0 00    \tcmpw   $0xf0,-0x5860\n    abc8:\t73 03                \tjae    0xabcd\n    abca:\te9 c1 06             \tjmp    0xb28e\n    abcd:\tc7 46 18 22 00       \tmovw   $0x22,0x18(%bp)\n    abd2:\tc7 46 08 71 00       \tmovw   $0x71,0x8(%bp)"
+        },
+        {
+          "raw_address": 44051,
+          "raw_address_hex": "0xAC13",
+          "line": "ac13:\tc7 46 08 8e 00       \tmovw   $0x8e,0x8(%bp)",
+          "type": "immediate",
+          "exact_sprite": 142,
+          "formula": null,
+          "frame_family_candidate": null,
+          "context": "    abfe:\tc3                   \tret\n    abff:\tff 0e 7e a4          \tdecw   -0x5b82\n    ac03:\tc7 46 18 64 00       \tmovw   $0x64,0x18(%bp)\n    ac08:\ta1 80 23             \tmov    0x2380,%ax\n    ac0b:\t89 46 04             \tmov    %ax,0x4(%bp)\n    ac0e:\tc7 46 02 00 00       \tmovw   $0x0,0x2(%bp)\n    ac13:\tc7 46 08 8e 00       \tmovw   $0x8e,0x8(%bp)"
+        }
+      ]
+    },
+    {
+      "behavior": 39,
+      "behavior_hex": "0x27",
+      "handler_runtime_ptr": 33629,
+      "handler_runtime_ptr_hex": "0x835D",
+      "handler_raw_guess": 33629,
+      "handler_raw_guess_hex": "0x835D",
+      "handler_raw_end_guess": 33685,
+      "handler_raw_end_guess_hex": "0x8395",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 45,
+      "behavior_hex": "0x2D",
+      "handler_runtime_ptr": 34735,
+      "handler_runtime_ptr_hex": "0x87AF",
+      "handler_raw_guess": 34735,
+      "handler_raw_guess_hex": "0x87AF",
+      "handler_raw_end_guess": 34778,
+      "handler_raw_end_guess_hex": "0x87DA",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 47,
+      "behavior_hex": "0x2F",
+      "handler_runtime_ptr": 34848,
+      "handler_runtime_ptr_hex": "0x8820",
+      "handler_raw_guess": 34848,
+      "handler_raw_guess_hex": "0x8820",
+      "handler_raw_end_guess": 34897,
+      "handler_raw_end_guess_hex": "0x8851",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 48,
+      "behavior_hex": "0x30",
+      "handler_runtime_ptr": 34897,
+      "handler_runtime_ptr_hex": "0x8851",
+      "handler_raw_guess": 34897,
+      "handler_raw_guess_hex": "0x8851",
+      "handler_raw_end_guess": 34986,
+      "handler_raw_end_guess_hex": "0x88AA",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": [
+        {
+          "raw_address": 34901,
+          "raw_address_hex": "0x8855",
+          "line": "8855:\t89 46 08             \tmov    %ax,0x8(%bp)",
+          "type": "computed",
+          "exact_sprite": null,
+          "formula": "AX = [0x233c] + 0x10",
+          "frame_family_candidate": [
+            16,
+            17,
+            18,
+            19
+          ],
+          "context": "    8841:\te9 67 32             \tjmp    0xbaab\n    8844:\te8 56 38             \tcall   0xc09d\n    8847:\tc7 46 06 00 00       \tmovw   $0x0,0x6(%bp)\n    884c:\te9 5c 32             \tjmp    0xbaab\n    884f:\ta1 3c 23             \tmov    0x233c,%ax\n    8852:\t05 10 00             \tadd    $0x10,%ax\n    8855:\t89 46 08             \tmov    %ax,0x8(%bp)"
+        },
+        {
+          "raw_address": 34942,
+          "raw_address_hex": "0x887E",
+          "line": "887e:\tc7 46 08 6e 00       \tmovw   $0x6e,0x8(%bp)",
+          "type": "immediate",
+          "exact_sprite": 110,
+          "formula": null,
+          "frame_family_candidate": null,
+          "context": "    886c:\t74 0d                \tje     0x887b\n    886e:\tb8 05 00             \tmov    $0x5,%ax\n    8871:\t81 7e 04 c0 00       \tcmpw   $0xc0,0x4(%bp)\n    8876:\t74 03                \tje     0x887b\n    8878:\t8b 46 06             \tmov    0x6(%bp),%ax\n    887b:\t89 46 06             \tmov    %ax,0x6(%bp)\n    887e:\tc7 46 08 6e 00       \tmovw   $0x6e,0x8(%bp)"
+        },
+        {
+          "raw_address": 34953,
+          "raw_address_hex": "0x8889",
+          "line": "8889:\tc7 46 08 6e 00       \tmovw   $0x6e,0x8(%bp)",
+          "type": "immediate",
+          "exact_sprite": 110,
+          "formula": null,
+          "frame_family_candidate": null,
+          "context": "    8876:\t74 03                \tje     0x887b\n    8878:\t8b 46 06             \tmov    0x6(%bp),%ax\n    887b:\t89 46 06             \tmov    %ax,0x6(%bp)\n    887e:\tc7 46 08 6e 00       \tmovw   $0x6e,0x8(%bp)\n    8883:\te8 43 25             \tcall   0xadc9\n    8886:\te9 22 32             \tjmp    0xbaab\n    8889:\tc7 46 08 6e 00       \tmovw   $0x6e,0x8(%bp)"
+        }
+      ]
+    },
+    {
+      "behavior": 49,
+      "behavior_hex": "0x31",
+      "handler_runtime_ptr": 34986,
+      "handler_runtime_ptr_hex": "0x88AA",
+      "handler_raw_guess": 34986,
+      "handler_raw_guess_hex": "0x88AA",
+      "handler_raw_end_guess": 34998,
+      "handler_raw_end_guess_hex": "0x88B6",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 50,
+      "behavior_hex": "0x32",
+      "handler_runtime_ptr": 34998,
+      "handler_runtime_ptr_hex": "0x88B6",
+      "handler_raw_guess": 34998,
+      "handler_raw_guess_hex": "0x88B6",
+      "handler_raw_end_guess": 35023,
+      "handler_raw_end_guess_hex": "0x88CF",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": [
+        {
+          "raw_address": 35019,
+          "raw_address_hex": "0x88CB",
+          "line": "88cb:\t89 5e 08             \tmov    %bx,0x8(%bp)",
+          "type": "computed",
+          "exact_sprite": null,
+          "formula": null,
+          "frame_family_candidate": null,
+          "context": "    88b8:\te9 f0 31             \tjmp    0xbaab\n    88bb:\t8b 1e 3c 23          \tmov    0x233c,%bx\n    88bf:\td1 e3                \tshl    $1,%bx\n    88c1:\t81 c3 d2 96          \tadd    $0x96d2,%bx\n    88c5:\t8b 1f                \tmov    (%bx),%bx\n    88c7:\t81 c3 cc 00          \tadd    $0xcc,%bx\n    88cb:\t89 5e 08             \tmov    %bx,0x8(%bp)"
+        }
+      ]
+    },
+    {
+      "behavior": 52,
+      "behavior_hex": "0x34",
+      "handler_runtime_ptr": 35048,
+      "handler_runtime_ptr_hex": "0x88E8",
+      "handler_raw_guess": 35048,
+      "handler_raw_guess_hex": "0x88E8",
+      "handler_raw_end_guess": 35072,
+      "handler_raw_end_guess_hex": "0x8900",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 53,
+      "behavior_hex": "0x35",
+      "handler_runtime_ptr": 46047,
+      "handler_runtime_ptr_hex": "0xB3DF",
+      "handler_raw_guess": 43554,
+      "handler_raw_guess_hex": "0xAA22",
+      "handler_raw_end_guess": 43563,
+      "handler_raw_end_guess_hex": "0xAA2B",
+      "mapping_rule": "runtime-0x09BD",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 54,
+      "behavior_hex": "0x36",
+      "handler_runtime_ptr": 46028,
+      "handler_runtime_ptr_hex": "0xB3CC",
+      "handler_raw_guess": 43535,
+      "handler_raw_guess_hex": "0xAA0F",
+      "handler_raw_end_guess": 43554,
+      "handler_raw_end_guess_hex": "0xAA22",
+      "mapping_rule": "runtime-0x09BD",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 55,
+      "behavior_hex": "0x37",
+      "handler_runtime_ptr": 35202,
+      "handler_runtime_ptr_hex": "0x8982",
+      "handler_raw_guess": 35202,
+      "handler_raw_guess_hex": "0x8982",
+      "handler_raw_end_guess": 35305,
+      "handler_raw_end_guess_hex": "0x89E9",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": [
+        {
+          "raw_address": 35204,
+          "raw_address_hex": "0x8984",
+          "line": "8984:\t89 5e 08             \tmov    %bx,0x8(%bp)",
+          "type": "computed",
+          "exact_sprite": null,
+          "formula": null,
+          "frame_family_candidate": null,
+          "context": "    896f:\t83 3e 56 23 04       \tcmpw   $0x4,0x2356\n    8974:\t74 3c                \tje     0x89b2\n    8976:\t8b 1e 3c 23          \tmov    0x233c,%bx\n    897a:\td1 e3                \tshl    $1,%bx\n    897c:\t8b 9f d2 96          \tmov    -0x692e(%bx),%bx\n    8980:\t81 c3 a1 00          \tadd    $0xa1,%bx\n    8984:\t89 5e 08             \tmov    %bx,0x8(%bp)"
+        },
+        {
+          "raw_address": 35228,
+          "raw_address_hex": "0x899C",
+          "line": "899c:\t89 5e 08             \tmov    %bx,0x8(%bp)",
+          "type": "computed",
+          "exact_sprite": null,
+          "formula": null,
+          "frame_family_candidate": null,
+          "context": "    8987:\t83 3e 56 23 05       \tcmpw   $0x5,0x2356\n    898c:\t74 24                \tje     0x89b2\n    898e:\t8b 1e 3c 23          \tmov    0x233c,%bx\n    8992:\td1 e3                \tshl    $1,%bx\n    8994:\t8b 9f d2 96          \tmov    -0x692e(%bx),%bx\n    8998:\t81 c3 00 01          \tadd    $0x100,%bx\n    899c:\t89 5e 08             \tmov    %bx,0x8(%bp)"
+        },
+        {
+          "raw_address": 35247,
+          "raw_address_hex": "0x89AF",
+          "line": "89af:\t89 5e 08             \tmov    %bx,0x8(%bp)",
+          "type": "computed",
+          "exact_sprite": null,
+          "formula": null,
+          "frame_family_candidate": null,
+          "context": "    899c:\t89 5e 08             \tmov    %bx,0x8(%bp)\n    899f:\teb 11                \tjmp    0x89b2\n    89a1:\t8b 1e 3c 23          \tmov    0x233c,%bx\n    89a5:\td1 e3                \tshl    $1,%bx\n    89a7:\t8b 9f d2 96          \tmov    -0x692e(%bx),%bx\n    89ab:\t81 c3 cf 00          \tadd    $0xcf,%bx\n    89af:\t89 5e 08             \tmov    %bx,0x8(%bp)"
+        }
+      ]
+    },
+    {
+      "behavior": 56,
+      "behavior_hex": "0x38",
+      "handler_runtime_ptr": 35327,
+      "handler_runtime_ptr_hex": "0x89FF",
+      "handler_raw_guess": 35327,
+      "handler_raw_guess_hex": "0x89FF",
+      "handler_raw_end_guess": 35363,
+      "handler_raw_end_guess_hex": "0x8A23",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 57,
+      "behavior_hex": "0x39",
+      "handler_runtime_ptr": 35363,
+      "handler_runtime_ptr_hex": "0x8A23",
+      "handler_raw_guess": 35363,
+      "handler_raw_guess_hex": "0x8A23",
+      "handler_raw_end_guess": 35413,
+      "handler_raw_end_guess_hex": "0x8A55",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 58,
+      "behavior_hex": "0x3A",
+      "handler_runtime_ptr": 35413,
+      "handler_runtime_ptr_hex": "0x8A55",
+      "handler_raw_guess": 35413,
+      "handler_raw_guess_hex": "0x8A55",
+      "handler_raw_end_guess": 35454,
+      "handler_raw_end_guess_hex": "0x8A7E",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": [
+        {
+          "raw_address": 35436,
+          "raw_address_hex": "0x8A6C",
+          "line": "8a6c:\t89 5e 08             \tmov    %bx,0x8(%bp)",
+          "type": "computed",
+          "exact_sprite": null,
+          "formula": null,
+          "frame_family_candidate": null,
+          "context": "    8a56:\tc7 46 36 64 97       \tmovw   $0x9764,0x36(%bp)\n    8a5b:\te9 d0 26             \tjmp    0xb12e\n    8a5e:\t8b 1e 3c 23          \tmov    0x233c,%bx\n    8a62:\td1 e3                \tshl    $1,%bx\n    8a64:\t8b 9f d2 96          \tmov    -0x692e(%bx),%bx\n    8a68:\t81 c3 cf 00          \tadd    $0xcf,%bx\n    8a6c:\t89 5e 08             \tmov    %bx,0x8(%bp)"
+        }
+      ]
+    },
+    {
+      "behavior": 59,
+      "behavior_hex": "0x3B",
+      "handler_runtime_ptr": 35454,
+      "handler_runtime_ptr_hex": "0x8A7E",
+      "handler_raw_guess": 35454,
+      "handler_raw_guess_hex": "0x8A7E",
+      "handler_raw_end_guess": 35492,
+      "handler_raw_end_guess_hex": "0x8AA4",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": [
+        {
+          "raw_address": 35491,
+          "raw_address_hex": "0x8AA3",
+          "line": "8aa3:\t89 46 08             \tmov    %ax,0x8(%bp)",
+          "type": "computed",
+          "exact_sprite": null,
+          "formula": "AX = [0x2338] + 0x51",
+          "frame_family_candidate": null,
+          "context": "    8a91:\t05 4b 00             \tadd    $0x4b,%ax\n    8a94:\te9 84 fb             \tjmp    0x861b\n    8a97:\ta1 38 23             \tmov    0x2338,%ax\n    8a9a:\t05 51 00             \tadd    $0x51,%ax\n    8a9d:\te9 72 26             \tjmp    0xb112\n    8aa0:\tb8 1d 00             \tmov    $0x1d,%ax\n    8aa3:\t89 46 08             \tmov    %ax,0x8(%bp)"
+        }
+      ]
+    },
+    {
+      "behavior": 60,
+      "behavior_hex": "0x3C",
+      "handler_runtime_ptr": 35492,
+      "handler_runtime_ptr_hex": "0x8AA4",
+      "handler_raw_guess": 35492,
+      "handler_raw_guess_hex": "0x8AA4",
+      "handler_raw_end_guess": 35527,
+      "handler_raw_end_guess_hex": "0x8AC7",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 62,
+      "behavior_hex": "0x3E",
+      "handler_runtime_ptr": 35549,
+      "handler_runtime_ptr_hex": "0x8ADD",
+      "handler_raw_guess": 35549,
+      "handler_raw_guess_hex": "0x8ADD",
+      "handler_raw_end_guess": 35574,
+      "handler_raw_end_guess_hex": "0x8AF6",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": [
+        {
+          "raw_address": 35553,
+          "raw_address_hex": "0x8AE1",
+          "line": "8ae1:\t89 5e 08             \tmov    %bx,0x8(%bp)",
+          "type": "computed",
+          "exact_sprite": null,
+          "formula": null,
+          "frame_family_candidate": null,
+          "context": "    8ace:\te2 e7                \tloop   0x8ab7\n    8ad0:\te9 d8 2f             \tjmp    0xbaab\n    8ad3:\t8b 1e 3c 23          \tmov    0x233c,%bx\n    8ad7:\td1 e3                \tshl    $1,%bx\n    8ad9:\t8b 9f d2 96          \tmov    -0x692e(%bx),%bx\n    8add:\t81 c3 cf 00          \tadd    $0xcf,%bx\n    8ae1:\t89 5e 08             \tmov    %bx,0x8(%bp)"
+        }
+      ]
+    },
+    {
+      "behavior": 64,
+      "behavior_hex": "0x40",
+      "handler_runtime_ptr": 35643,
+      "handler_runtime_ptr_hex": "0x8B3B",
+      "handler_raw_guess": 35643,
+      "handler_raw_guess_hex": "0x8B3B",
+      "handler_raw_end_guess": 35712,
+      "handler_raw_end_guess_hex": "0x8B80",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": [
+        {
+          "raw_address": 35690,
+          "raw_address_hex": "0x8B6A",
+          "line": "8b6a:\t89 5e 08             \tmov    %bx,0x8(%bp)",
+          "type": "computed",
+          "exact_sprite": null,
+          "formula": null,
+          "frame_family_candidate": null,
+          "context": "    8b54:\tc7 46 18 39 00       \tmovw   $0x39,0x18(%bp)\n    8b59:\te9 2d fd             \tjmp    0x8889\n    8b5c:\t8b 1e 3c 23          \tmov    0x233c,%bx\n    8b60:\td1 e3                \tshl    $1,%bx\n    8b62:\t8b 9f d2 96          \tmov    -0x692e(%bx),%bx\n    8b66:\t81 c3 cf 00          \tadd    $0xcf,%bx\n    8b6a:\t89 5e 08             \tmov    %bx,0x8(%bp)"
+        },
+        {
+          "raw_address": 35711,
+          "raw_address_hex": "0x8B7F",
+          "line": "8b7f:\t89 46 08             \tmov    %ax,0x8(%bp)",
+          "type": "computed",
+          "exact_sprite": null,
+          "formula": null,
+          "frame_family_candidate": null,
+          "context": "    8b6d:\te9 b1 fb             \tjmp    0x8721\n    8b70:\ta1 28 23             \tmov    0x2328,%ax\n    8b73:\t03 c5                \tadd    %bp,%ax\n    8b75:\t03 06 40 23          \tadd    0x2340,%ax\n    8b79:\t25 07 00             \tand    $0x7,%ax\n    8b7c:\t05 80 00             \tadd    $0x80,%ax\n    8b7f:\t89 46 08             \tmov    %ax,0x8(%bp)"
+        }
+      ]
+    },
+    {
+      "behavior": 65,
+      "behavior_hex": "0x41",
+      "handler_runtime_ptr": 35784,
+      "handler_runtime_ptr_hex": "0x8BC8",
+      "handler_raw_guess": 35784,
+      "handler_raw_guess_hex": "0x8BC8",
+      "handler_raw_end_guess": 35792,
+      "handler_raw_end_guess_hex": "0x8BD0",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 66,
+      "behavior_hex": "0x42",
+      "handler_runtime_ptr": 35832,
+      "handler_runtime_ptr_hex": "0x8BF8",
+      "handler_raw_guess": 35832,
+      "handler_raw_guess_hex": "0x8BF8",
+      "handler_raw_end_guess": 35871,
+      "handler_raw_end_guess_hex": "0x8C1F",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 67,
+      "behavior_hex": "0x43",
+      "handler_runtime_ptr": 35792,
+      "handler_runtime_ptr_hex": "0x8BD0",
+      "handler_raw_guess": 35792,
+      "handler_raw_guess_hex": "0x8BD0",
+      "handler_raw_end_guess": 35800,
+      "handler_raw_end_guess_hex": "0x8BD8",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 68,
+      "behavior_hex": "0x44",
+      "handler_runtime_ptr": 35800,
+      "handler_runtime_ptr_hex": "0x8BD8",
+      "handler_raw_guess": 35800,
+      "handler_raw_guess_hex": "0x8BD8",
+      "handler_raw_end_guess": 35808,
+      "handler_raw_end_guess_hex": "0x8BE0",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 69,
+      "behavior_hex": "0x45",
+      "handler_runtime_ptr": 35808,
+      "handler_runtime_ptr_hex": "0x8BE0",
+      "handler_raw_guess": 35808,
+      "handler_raw_guess_hex": "0x8BE0",
+      "handler_raw_end_guess": 35816,
+      "handler_raw_end_guess_hex": "0x8BE8",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 70,
+      "behavior_hex": "0x46",
+      "handler_runtime_ptr": 35880,
+      "handler_runtime_ptr_hex": "0x8C28",
+      "handler_raw_guess": 35880,
+      "handler_raw_guess_hex": "0x8C28",
+      "handler_raw_end_guess": 35889,
+      "handler_raw_end_guess_hex": "0x8C31",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 71,
+      "behavior_hex": "0x47",
+      "handler_runtime_ptr": 35889,
+      "handler_runtime_ptr_hex": "0x8C31",
+      "handler_raw_guess": 35889,
+      "handler_raw_guess_hex": "0x8C31",
+      "handler_raw_end_guess": 35898,
+      "handler_raw_end_guess_hex": "0x8C3A",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 72,
+      "behavior_hex": "0x48",
+      "handler_runtime_ptr": 36156,
+      "handler_runtime_ptr_hex": "0x8D3C",
+      "handler_raw_guess": 36156,
+      "handler_raw_guess_hex": "0x8D3C",
+      "handler_raw_end_guess": 36167,
+      "handler_raw_end_guess_hex": "0x8D47",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 73,
+      "behavior_hex": "0x49",
+      "handler_runtime_ptr": 35898,
+      "handler_runtime_ptr_hex": "0x8C3A",
+      "handler_raw_guess": 35898,
+      "handler_raw_guess_hex": "0x8C3A",
+      "handler_raw_end_guess": 35949,
+      "handler_raw_end_guess_hex": "0x8C6D",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 75,
+      "behavior_hex": "0x4B",
+      "handler_runtime_ptr": 35949,
+      "handler_runtime_ptr_hex": "0x8C6D",
+      "handler_raw_guess": 35949,
+      "handler_raw_guess_hex": "0x8C6D",
+      "handler_raw_end_guess": 35988,
+      "handler_raw_end_guess_hex": "0x8C94",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 76,
+      "behavior_hex": "0x4C",
+      "handler_runtime_ptr": 35988,
+      "handler_runtime_ptr_hex": "0x8C94",
+      "handler_raw_guess": 35988,
+      "handler_raw_guess_hex": "0x8C94",
+      "handler_raw_end_guess": 36034,
+      "handler_raw_end_guess_hex": "0x8CC2",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 77,
+      "behavior_hex": "0x4D",
+      "handler_runtime_ptr": 36034,
+      "handler_runtime_ptr_hex": "0x8CC2",
+      "handler_raw_guess": 36034,
+      "handler_raw_guess_hex": "0x8CC2",
+      "handler_raw_end_guess": 36086,
+      "handler_raw_end_guess_hex": "0x8CF6",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 78,
+      "behavior_hex": "0x4E",
+      "handler_runtime_ptr": 36086,
+      "handler_runtime_ptr_hex": "0x8CF6",
+      "handler_raw_guess": 36086,
+      "handler_raw_guess_hex": "0x8CF6",
+      "handler_raw_end_guess": 36106,
+      "handler_raw_end_guess_hex": "0x8D0A",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 79,
+      "behavior_hex": "0x4F",
+      "handler_runtime_ptr": 36106,
+      "handler_runtime_ptr_hex": "0x8D0A",
+      "handler_raw_guess": 36106,
+      "handler_raw_guess_hex": "0x8D0A",
+      "handler_raw_end_guess": 36131,
+      "handler_raw_end_guess_hex": "0x8D23",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 102,
+      "behavior_hex": "0x66",
+      "handler_runtime_ptr": 62736,
+      "handler_runtime_ptr_hex": "0xF510",
+      "handler_raw_guess": 55097,
+      "handler_raw_guess_hex": "0xD739",
+      "handler_raw_end_guess": 55110,
+      "handler_raw_end_guess_hex": "0xD746",
+      "mapping_rule": "runtime-0x1DD7",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 103,
+      "behavior_hex": "0x67",
+      "handler_runtime_ptr": 62749,
+      "handler_runtime_ptr_hex": "0xF51D",
+      "handler_raw_guess": 55110,
+      "handler_raw_guess_hex": "0xD746",
+      "handler_raw_end_guess": 55123,
+      "handler_raw_end_guess_hex": "0xD753",
+      "mapping_rule": "runtime-0x1DD7",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 123,
+      "behavior_hex": "0x7B",
+      "handler_runtime_ptr": 36167,
+      "handler_runtime_ptr_hex": "0x8D47",
+      "handler_raw_guess": 36167,
+      "handler_raw_guess_hex": "0x8D47",
+      "handler_raw_end_guess": 36175,
+      "handler_raw_end_guess_hex": "0x8D4F",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 125,
+      "behavior_hex": "0x7D",
+      "handler_runtime_ptr": 36175,
+      "handler_runtime_ptr_hex": "0x8D4F",
+      "handler_raw_guess": 36175,
+      "handler_raw_guess_hex": "0x8D4F",
+      "handler_raw_end_guess": 36183,
+      "handler_raw_end_guess_hex": "0x8D57",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 126,
+      "behavior_hex": "0x7E",
+      "handler_runtime_ptr": 36175,
+      "handler_runtime_ptr_hex": "0x8D4F",
+      "handler_raw_guess": 36175,
+      "handler_raw_guess_hex": "0x8D4F",
+      "handler_raw_end_guess": 36183,
+      "handler_raw_end_guess_hex": "0x8D57",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 131,
+      "behavior_hex": "0x83",
+      "handler_runtime_ptr": 35305,
+      "handler_runtime_ptr_hex": "0x89E9",
+      "handler_raw_guess": 35305,
+      "handler_raw_guess_hex": "0x89E9",
+      "handler_raw_end_guess": 35327,
+      "handler_raw_end_guess_hex": "0x89FF",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": [
+        {
+          "raw_address": 35326,
+          "raw_address_hex": "0x89FE",
+          "line": "89fe:\t89 46 08             \tmov    %ax,0x8(%bp)",
+          "type": "computed",
+          "exact_sprite": null,
+          "formula": null,
+          "frame_family_candidate": null,
+          "context": "    89ed:\td1 e8                \tshr    $1,%ax\n    89ef:\tbb 03 01             \tmov    $0x103,%bx\n    89f2:\t83 3e 56 23 04       \tcmpw   $0x4,0x2356\n    89f7:\t75 03                \tjne    0x89fc\n    89f9:\tbb 78 01             \tmov    $0x178,%bx\n    89fc:\t03 c3                \tadd    %bx,%ax\n    89fe:\t89 46 08             \tmov    %ax,0x8(%bp)"
+        }
+      ]
+    },
+    {
+      "behavior": 137,
+      "behavior_hex": "0x89",
+      "handler_runtime_ptr": 45734,
+      "handler_runtime_ptr_hex": "0xB2A6",
+      "handler_raw_guess": 43241,
+      "handler_raw_guess_hex": "0xA8E9",
+      "handler_raw_end_guess": 43263,
+      "handler_raw_end_guess_hex": "0xA8FF",
+      "mapping_rule": "runtime-0x09BD",
+      "sprite_evidence": [
+        {
+          "raw_address": 43247,
+          "raw_address_hex": "0xA8EF",
+          "line": "a8ef:\t89 46 08             \tmov    %ax,0x8(%bp)",
+          "type": "computed",
+          "exact_sprite": null,
+          "formula": "AX = [0x233c] + 0x1C",
+          "frame_family_candidate": [
+            28,
+            29,
+            30,
+            31
+          ],
+          "context": "    a8e0:\t59                   \tpop    %cx\n    a8e1:\te2 f7                \tloop   0xa8da\n    a8e3:\te9 26 fb             \tjmp    0xa40c\n    a8e6:\te9 b4 fa             \tjmp    0xa39d\n    a8e9:\ta1 3c 23             \tmov    0x233c,%ax\n    a8ec:\t05 1c 00             \tadd    $0x1c,%ax\n    a8ef:\t89 46 08             \tmov    %ax,0x8(%bp)"
+        }
+      ]
+    },
+    {
+      "behavior": 138,
+      "behavior_hex": "0x8A",
+      "handler_runtime_ptr": 35871,
+      "handler_runtime_ptr_hex": "0x8C1F",
+      "handler_raw_guess": 35871,
+      "handler_raw_guess_hex": "0x8C1F",
+      "handler_raw_end_guess": 35880,
+      "handler_raw_end_guess_hex": "0x8C28",
+      "mapping_rule": "direct-raw",
+      "sprite_evidence": []
+    },
+    {
+      "behavior": 139,
+      "behavior_hex": "0x8B",
+      "handler_runtime_ptr": 48008,
+      "handler_runtime_ptr_hex": "0xBB88",
+      "handler_raw_guess": 45515,
+      "handler_raw_guess_hex": "0xB1CB",
+      "handler_raw_end_guess": 45704,
+      "handler_raw_end_guess_hex": "0xB288",
+      "mapping_rule": "runtime-0x09BD",
+      "sprite_evidence": [
+        {
+          "raw_address": 45557,
+          "raw_address_hex": "0xB1F5",
+          "line": "b1f5:\t89 46 08             \tmov    %ax,0x8(%bp)",
+          "type": "computed",
+          "exact_sprite": null,
+          "formula": null,
+          "frame_family_candidate": null,
+          "context": "    b1e0:\t03 06 52 a9          \tadd    -0x56ae,%ax\n    b1e4:\t03 06 52 a9          \tadd    -0x56ae,%ax\n    b1e8:\t03 06 52 a9          \tadd    -0x56ae,%ax\n    b1ec:\t03 06 52 a9          \tadd    -0x56ae,%ax\n    b1f0:\t03 c3                \tadd    %bx,%ax\n    b1f2:\t03 46 06             \tadd    0x6(%bp),%ax\n    b1f5:\t89 46 08             \tmov    %ax,0x8(%bp)"
+        }
+      ]
+    },
+    {
+      "behavior": 140,
+      "behavior_hex": "0x8C",
+      "handler_runtime_ptr": 48000,
+      "handler_runtime_ptr_hex": "0xBB80",
+      "handler_raw_guess": 45507,
+      "handler_raw_guess_hex": "0xB1C3",
+      "handler_raw_end_guess": 45515,
+      "handler_raw_end_guess_hex": "0xB1CB",
+      "mapping_rule": "runtime-0x09BD",
+      "sprite_evidence": []
+    }
+  ]
+}

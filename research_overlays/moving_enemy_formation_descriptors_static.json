@@ -1,0 +1,328 @@
+{
+  "_meta": {
+    "status": "strong static parse of a moving-enemy formation descriptor block in executable data",
+    "raw_file_offset_start": "0x135D1",
+    "raw_file_offset_end": "0x136DD",
+    "descriptor_format": "u16 field_14, u16 field_0A, u16 behavior, u16 count, then count \u00d7 (s16 dx, s16 dy)",
+    "important_confirmation": "behavior 0x2D count 4 offsets [(0,0),(16,-16),(48,-16),(64,0)] matches the four blue runtime enemies' X pattern exactly when base_x=64.",
+    "caveat": "Raw file offsets are analysis offsets in the unpacked EXE artifact; runtime DS offsets for these descriptors are not yet fully mapped."
+  },
+  "descriptors": [
+    {
+      "raw_file_offset": "0x135D1",
+      "field_14": 1,
+      "field_0A": 1,
+      "behavior": 45,
+      "behavior_hex": "0x2D",
+      "count": 4,
+      "offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        },
+        {
+          "dx": 16,
+          "dy": -16
+        },
+        {
+          "dx": 48,
+          "dy": -16
+        },
+        {
+          "dx": 64,
+          "dy": 0
+        }
+      ],
+      "next_raw_file_offset": "0x135E9"
+    },
+    {
+      "raw_file_offset": "0x135E9",
+      "field_14": 1,
+      "field_0A": 0,
+      "behavior": 52,
+      "behavior_hex": "0x34",
+      "count": 1,
+      "offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "next_raw_file_offset": "0x135F5"
+    },
+    {
+      "raw_file_offset": "0x135F5",
+      "field_14": 1,
+      "field_0A": 1,
+      "behavior": 19,
+      "behavior_hex": "0x13",
+      "count": 1,
+      "offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "next_raw_file_offset": "0x13601"
+    },
+    {
+      "raw_file_offset": "0x13601",
+      "field_14": 1,
+      "field_0A": 1,
+      "behavior": 21,
+      "behavior_hex": "0x15",
+      "count": 1,
+      "offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "next_raw_file_offset": "0x1360D"
+    },
+    {
+      "raw_file_offset": "0x1360D",
+      "field_14": 1,
+      "field_0A": 1,
+      "behavior": 28,
+      "behavior_hex": "0x1C",
+      "count": 1,
+      "offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "next_raw_file_offset": "0x13619"
+    },
+    {
+      "raw_file_offset": "0x13619",
+      "field_14": 1,
+      "field_0A": 1,
+      "behavior": 31,
+      "behavior_hex": "0x1F",
+      "count": 1,
+      "offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "next_raw_file_offset": "0x13625"
+    },
+    {
+      "raw_file_offset": "0x13625",
+      "field_14": 1,
+      "field_0A": 1,
+      "behavior": 125,
+      "behavior_hex": "0x7D",
+      "count": 1,
+      "offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "next_raw_file_offset": "0x13631"
+    },
+    {
+      "raw_file_offset": "0x13631",
+      "field_14": 1,
+      "field_0A": 1,
+      "behavior": 126,
+      "behavior_hex": "0x7E",
+      "count": 1,
+      "offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "next_raw_file_offset": "0x1363D"
+    },
+    {
+      "raw_file_offset": "0x1363D",
+      "field_14": 1,
+      "field_0A": 0,
+      "behavior": 137,
+      "behavior_hex": "0x89",
+      "count": 4,
+      "offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": -32
+        },
+        {
+          "dx": 32,
+          "dy": 0
+        },
+        {
+          "dx": 32,
+          "dy": -32
+        }
+      ],
+      "next_raw_file_offset": "0x13655"
+    },
+    {
+      "raw_file_offset": "0x13655",
+      "field_14": 1,
+      "field_0A": 1,
+      "behavior": 47,
+      "behavior_hex": "0x2F",
+      "count": 1,
+      "offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "next_raw_file_offset": "0x13661"
+    },
+    {
+      "raw_file_offset": "0x13661",
+      "field_14": 1,
+      "field_0A": 0,
+      "behavior": 25,
+      "behavior_hex": "0x19",
+      "count": 3,
+      "offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": -16
+        },
+        {
+          "dx": 0,
+          "dy": -32
+        }
+      ],
+      "next_raw_file_offset": "0x13675"
+    },
+    {
+      "raw_file_offset": "0x13675",
+      "field_14": 1,
+      "field_0A": 0,
+      "behavior": 27,
+      "behavior_hex": "0x1B",
+      "count": 3,
+      "offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": -16
+        },
+        {
+          "dx": 0,
+          "dy": -32
+        }
+      ],
+      "next_raw_file_offset": "0x13689"
+    },
+    {
+      "raw_file_offset": "0x13689",
+      "field_14": 1,
+      "field_0A": 1,
+      "behavior": 39,
+      "behavior_hex": "0x27",
+      "count": 8,
+      "offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        },
+        {
+          "dx": 16,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": -16
+        },
+        {
+          "dx": 16,
+          "dy": -16
+        },
+        {
+          "dx": 0,
+          "dy": -32
+        },
+        {
+          "dx": 16,
+          "dy": -32
+        },
+        {
+          "dx": 0,
+          "dy": -48
+        },
+        {
+          "dx": 16,
+          "dy": -48
+        }
+      ],
+      "next_raw_file_offset": "0x136B1"
+    },
+    {
+      "raw_file_offset": "0x136B1",
+      "field_14": 1,
+      "field_0A": 0,
+      "behavior": 26,
+      "behavior_hex": "0x1A",
+      "count": 3,
+      "offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": -16
+        },
+        {
+          "dx": 0,
+          "dy": -32
+        }
+      ],
+      "next_raw_file_offset": "0x136C5"
+    },
+    {
+      "raw_file_offset": "0x136C5",
+      "field_14": 1,
+      "field_0A": 0,
+      "behavior": 140,
+      "behavior_hex": "0x8C",
+      "count": 1,
+      "offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "next_raw_file_offset": "0x136D1"
+    },
+    {
+      "raw_file_offset": "0x136D1",
+      "field_14": 1,
+      "field_0A": 0,
+      "behavior": 139,
+      "behavior_hex": "0x8B",
+      "count": 1,
+      "offsets": [
+        {
+          "dx": 0,
+          "dy": 0
+        }
+      ],
+      "next_raw_file_offset": "0x136DD"
+    }
+  ]
+}

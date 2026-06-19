@@ -1,0 +1,648 @@
+{
+  "_meta": {
+    "purpose": "Coverage of behavior IDs currently used by decoded enemy/map-event placement layers.",
+    "total_behaviors": 56,
+    "resolved_behaviors": 12,
+    "unresolved_behaviors": 44,
+    "unresolved_behavior_ids": [
+      "0x10",
+      "0x11",
+      "0x13",
+      "0x15",
+      "0x1C",
+      "0x1F",
+      "0x24",
+      "0x25",
+      "0x27",
+      "0x28",
+      "0x2F",
+      "0x31",
+      "0x32",
+      "0x34",
+      "0x35",
+      "0x36",
+      "0x37",
+      "0x38",
+      "0x39",
+      "0x3A",
+      "0x3C",
+      "0x3E",
+      "0x41",
+      "0x42",
+      "0x43",
+      "0x44",
+      "0x45",
+      "0x46",
+      "0x47",
+      "0x48",
+      "0x49",
+      "0x4B",
+      "0x4C",
+      "0x4D",
+      "0x4E",
+      "0x4F",
+      "0x66",
+      "0x67",
+      "0x7B",
+      "0x7D",
+      "0x7E",
+      "0x8A",
+      "0x90",
+      "0x91"
+    ]
+  },
+  "behaviors": {
+    "0x10": {
+      "sources": [
+        "moving stream 0",
+        "moving stream 1",
+        "moving stream 3"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x11": {
+      "sources": [
+        "moving stream 0",
+        "moving stream 1",
+        "moving stream 3"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x13": {
+      "sources": [
+        "moving stream 3"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x15": {
+      "sources": [
+        "moving stream 0"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x19": {
+      "sources": [
+        "moving stream 1"
+      ],
+      "status": "strong_static",
+      "display": "likely 2X2:54\u201358",
+      "sprite_frames": [
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "needs_sprite_research": false
+    },
+    "0x1A": {
+      "sources": [
+        "moving stream 1"
+      ],
+      "status": "strong_static",
+      "display": "likely 2X2:36\u201341",
+      "sprite_frames": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "needs_sprite_research": false
+    },
+    "0x1C": {
+      "sources": [
+        "moving stream 2"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x1F": {
+      "sources": [
+        "moving stream 1"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x20": {
+      "sources": [
+        "intro minigame table"
+      ],
+      "status": "confirmed_partial",
+      "display": "snapshot showed 2X2:123 and 126",
+      "sprite_frames": [
+        123,
+        126
+      ],
+      "needs_sprite_research": false
+    },
+    "0x21": {
+      "sources": [
+        "moving stream 0",
+        "moving stream 1",
+        "moving stream 2",
+        "moving stream 3",
+        "moving stream 4",
+        "moving stream 5"
+      ],
+      "status": "static_evidence",
+      "display": "2X2:113,142",
+      "sprite_frames": [
+        113,
+        142
+      ],
+      "needs_sprite_research": false
+    },
+    "0x24": {
+      "sources": [
+        "MAP event raw 0x6C"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x25": {
+      "sources": [
+        "MAP event raw 0x6D"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x27": {
+      "sources": [
+        "moving stream 1",
+        "moving stream 5"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x28": {
+      "sources": [
+        "MAP event raw 0xC9"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x2D": {
+      "sources": [
+        "moving stream 0",
+        "moving stream 1",
+        "moving stream 4"
+      ],
+      "status": "confirmed",
+      "display": "2X2:147\u2013150",
+      "sprite_frames": [
+        147,
+        148,
+        149,
+        150
+      ],
+      "needs_sprite_research": false
+    },
+    "0x2F": {
+      "sources": [
+        "moving stream 1",
+        "moving stream 2"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x30": {
+      "sources": [
+        "moving stream 1"
+      ],
+      "status": "strong_static",
+      "display": "2X2:16\u201319 primary anim; also 110 in later state",
+      "sprite_frames": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "needs_sprite_research": false
+    },
+    "0x31": {
+      "sources": [
+        "moving stream 0",
+        "moving stream 1",
+        "moving stream 2",
+        "moving stream 4"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x32": {
+      "sources": [
+        "moving stream 1"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x34": {
+      "sources": [
+        "moving stream 1",
+        "moving stream 2"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x35": {
+      "sources": [
+        "moving stream 1",
+        "moving stream 2"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x36": {
+      "sources": [
+        "moving stream 1"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x37": {
+      "sources": [
+        "moving stream 1"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x38": {
+      "sources": [
+        "moving stream 1",
+        "moving stream 2"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x39": {
+      "sources": [
+        "moving stream 2"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x3A": {
+      "sources": [
+        "moving stream 2"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x3B": {
+      "sources": [
+        "moving stream 0",
+        "moving stream 2",
+        "moving stream 5"
+      ],
+      "status": "strong_static",
+      "display": "likely 2X2:81\u201386",
+      "sprite_frames": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86
+      ],
+      "needs_sprite_research": false
+    },
+    "0x3C": {
+      "sources": [
+        "moving stream 2"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x3E": {
+      "sources": [
+        "moving stream 2"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x40": {
+      "sources": [
+        "moving stream 2"
+      ],
+      "status": "strong_static",
+      "display": "likely 2X2:128\u2013135 in one phase",
+      "sprite_frames": [
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135
+      ],
+      "needs_sprite_research": false
+    },
+    "0x41": {
+      "sources": [
+        "moving stream 2"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x42": {
+      "sources": [
+        "moving stream 2"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x43": {
+      "sources": [
+        "moving stream 2"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x44": {
+      "sources": [
+        "moving stream 2"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x45": {
+      "sources": [
+        "moving stream 2",
+        "moving stream 4"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x46": {
+      "sources": [
+        "moving stream 2"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x47": {
+      "sources": [
+        "moving stream 2"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x48": {
+      "sources": [
+        "moving stream 2",
+        "moving stream 3"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x49": {
+      "sources": [
+        "moving stream 3"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x4B": {
+      "sources": [
+        "moving stream 2"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x4C": {
+      "sources": [
+        "moving stream 2"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x4D": {
+      "sources": [
+        "moving stream 2"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x4E": {
+      "sources": [
+        "moving stream 2"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x4F": {
+      "sources": [
+        "moving stream 2"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x66": {
+      "sources": [
+        "moving stream 0"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x67": {
+      "sources": [
+        "moving stream 0"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x7B": {
+      "sources": [
+        "moving stream 5"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x7D": {
+      "sources": [
+        "moving stream 4"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x7E": {
+      "sources": [
+        "moving stream 5"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x83": {
+      "sources": [
+        "moving stream 1"
+      ],
+      "status": "strong_static",
+      "display": "likely 2X2:259\u2013260, or 376\u2013377 in level 4 branch",
+      "sprite_frames": [
+        259,
+        260
+      ],
+      "needs_sprite_research": false
+    },
+    "0x89": {
+      "sources": [
+        "moving stream 1"
+      ],
+      "status": "strong_static",
+      "display": "likely 2X2:28\u201331",
+      "sprite_frames": [
+        28,
+        29,
+        30,
+        31
+      ],
+      "needs_sprite_research": false
+    },
+    "0x8A": {
+      "sources": [
+        "moving stream 2"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x8B": {
+      "sources": [
+        "MAP event raw 0x04",
+        "moving stream 2"
+      ],
+      "status": "confirmed",
+      "display": "2X2:101\u2013104",
+      "sprite_frames": [
+        101,
+        102,
+        103,
+        104
+      ],
+      "needs_sprite_research": false
+    },
+    "0x8C": {
+      "sources": [
+        "MAP event raw 0x07",
+        "moving stream 2"
+      ],
+      "status": "strong_static",
+      "display": "likely 2X2:93\u201396",
+      "sprite_frames": [
+        93,
+        94,
+        95,
+        96
+      ],
+      "needs_sprite_research": false
+    },
+    "0x90": {
+      "sources": [
+        "MAP event raw 0xAC"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    },
+    "0x91": {
+      "sources": [
+        "MAP event raw 0xB1"
+      ],
+      "status": "unresolved",
+      "display": "",
+      "sprite_frames": [],
+      "needs_sprite_research": true
+    }
+  }
+}

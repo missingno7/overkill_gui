@@ -1,0 +1,26 @@
+Relevant current disassembly clues:
+
+- Resource filename table:
+  24 = LOGO.BIC
+  28 = BLUEBITS.BIC
+  29 = WINDOW.BIC
+
+- Code around 0x572d is the fullscreen/type-3 draw path.
+  It explicitly sets:
+    height = 0xC8
+    widthBytes = 0x28
+  and uses plane-copy/jump-table modes.
+
+- Code around 0x5aac appears to draw another data-driven image format:
+    it reads two words from DS:SI into variables at 58fd/58ff,
+    stores SI/DI,
+    initializes counters,
+    calls a mode-dependent routine through table 595a,
+    loops with step 2 until reaching the first word.
+  This is a strong candidate for the more complex type=0/LOGO or BLUEBITS reveal blitter path, but it is not fully traced yet.
+
+- LOGO.BIC remains unresolved. Repeated patterns like:
+    36 NN 00 ...
+  and header:
+    00 36 40 00 22 36 ...
+  suggest a custom span/command stream, not raw EGA bitmap.

@@ -1,0 +1,93 @@
+    736d:	b9 23 00             	mov    $0x23,%cx
+    7370:	bb b4 23             	mov    $0x23b4,%bx
+    7373:	83 7f 16 06          	cmpw   $0x6,0x16(%bx)
+    7377:	74 06                	je     0x737f
+    7379:	83 7f 16 01          	cmpw   $0x1,0x16(%bx)
+    737d:	75 08                	jne    0x7387
+    737f:	83 c3 38             	add    $0x38,%bx
+    7382:	e2 ef                	loop   0x7373
+    7384:	bb b4 23             	mov    $0x23b4,%bx
+    7387:	e9 e9 47             	jmp    0xbb73
+    738a:	b9 23 00             	mov    $0x23,%cx
+    738d:	8b 1e d8 95          	mov    -0x6a28,%bx
+    7391:	83 3f 00             	cmpw   $0x0,(%bx)
+    7394:	74 12                	je     0x73a8
+    7396:	83 c3 38             	add    $0x38,%bx
+    7399:	81 fb 5c 2b          	cmp    $0x2b5c,%bx
+    739d:	75 03                	jne    0x73a2
+    739f:	bb b4 23             	mov    $0x23b4,%bx
+    73a2:	e2 ed                	loop   0x7391
+    73a4:	bb ff ff             	mov    $0xffff,%bx
+    73a7:	c3                   	ret
+    73a8:	89 1e d8 95          	mov    %bx,-0x6a28
+    73ac:	c3                   	ret
+    73ad:	e8 29 00             	call   0x73d9
+    73b0:	83 fb ff             	cmp    $0xffff,%bx
+    73b3:	74 01                	je     0x73b6
+    73b5:	c3                   	ret
+    73b6:	b9 22 00             	mov    $0x22,%cx
+    73b9:	bb 5c 2b             	mov    $0x2b5c,%bx
+    73bc:	83 7f 18 09          	cmpw   $0x9,0x18(%bx)
+    73c0:	74 0c                	je     0x73ce
+    73c2:	83 7f 18 0a          	cmpw   $0xa,0x18(%bx)
+    73c6:	74 06                	je     0x73ce
+    73c8:	83 7f 16 01          	cmpw   $0x1,0x16(%bx)
+    73cc:	75 08                	jne    0x73d6
+    73ce:	83 c3 38             	add    $0x38,%bx
+    73d1:	e2 e9                	loop   0x73bc
+    73d3:	bb 5c 2b             	mov    $0x2b5c,%bx
+    73d6:	e9 9a 47             	jmp    0xbb73
+    73d9:	b9 22 00             	mov    $0x22,%cx
+    73dc:	8b 1e da 95          	mov    -0x6a26,%bx
+    73e0:	81 fb cc 32          	cmp    $0x32cc,%bx
+    73e4:	75 03                	jne    0x73e9
+    73e6:	bb 5c 2b             	mov    $0x2b5c,%bx
+    73e9:	83 3f 00             	cmpw   $0x0,(%bx)
+    73ec:	74 09                	je     0x73f7
+    73ee:	83 c3 38             	add    $0x38,%bx
+    73f1:	e2 ed                	loop   0x73e0
+    73f3:	bb ff ff             	mov    $0xffff,%bx
+    73f6:	c3                   	ret
+    73f7:	89 1e da 95          	mov    %bx,-0x6a26
+    73fb:	c3                   	ret
+    73fc:	8b 5e 14             	mov    0x14(%bp),%bx
+    73ff:	d1 e3                	shl    $1,%bx
+    7401:	2e ff a7 a0 75       	jmp    *%cs:0x75a0(%bx)
+
+    9e89:	b9 24 00             	mov    $0x24,%cx
+    9e8c:	51                   	push   %cx
+    9e8d:	8b d9                	mov    %cx,%bx
+    9e8f:	d1 e3                	shl    $1,%bx
+    9e91:	8b af ca 32          	mov    0x32ca(%bx),%bp
+    9e95:	83 7e 00 00          	cmpw   $0x0,0x0(%bp)
+    9e99:	74 03                	je     0x9e9e
+    9e9b:	e8 6d b2             	call   0x510b
+    9e9e:	59                   	pop    %cx
+    9e9f:	e2 eb                	loop   0x9e8c
+    9ea1:	b9 22 00             	mov    $0x22,%cx
+    9ea4:	51                   	push   %cx
+    9ea5:	8b d9                	mov    %cx,%bx
+    9ea7:	d1 e3                	shl    $1,%bx
+    9ea9:	8b af 12 8d          	mov    -0x72ee(%bx),%bp
+    9ead:	83 7e 00 00          	cmpw   $0x0,0x0(%bp)
+    9eb1:	74 03                	je     0x9eb6
+    9eb3:	e8 55 b2             	call   0x510b
+    9eb6:	59                   	pop    %cx
+    9eb7:	e2 eb                	loop   0x9ea4
+    9eb9:	e8 74 a4             	call   0x4330
+    9ebc:	b9 22 00             	mov    $0x22,%cx
+    9ebf:	51                   	push   %cx
+    9ec0:	8b d9                	mov    %cx,%bx
+    9ec2:	d1 e3                	shl    $1,%bx
+    9ec4:	8b af 12 8d          	mov    -0x72ee(%bx),%bp
+    9ec8:	83 7e 00 00          	cmpw   $0x0,0x0(%bp)
+    9ecc:	74 03                	je     0x9ed1
+    9ece:	e8 b8 ce             	call   0x6d89
+    9ed1:	59                   	pop    %cx
+    9ed2:	e2 eb                	loop   0x9ebf
+    9ed4:	b9 23 00             	mov    $0x23,%cx
+    9ed7:	51                   	push   %cx
+    9ed8:	8b d9                	mov    %cx,%bx
+    9eda:	d1 e3                	shl    $1,%bx
+    9edc:	8b af ca 32          	mov    0x32ca(%bx),%bp
+    9ee0:	83 7e 00 00          	cmpw   $0x0,0x0(%bp)

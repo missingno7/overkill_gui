@@ -1,0 +1,20 @@
+00: runtime x=144, y= 96 | table x=144, y= 96
+01: runtime x=128, y= 96 | table x=128, y= 96
+02: runtime x=128, y= 80 | table x=128, y= 80
+03: runtime x=144, y= 80 | table x=144, y= 80
+04: runtime x=112, y= 64 | table x=112, y= 64
+05: runtime x= 80, y= 64 | table x= 80, y= 64
+06: runtime x= 64, y= 80 | table x= 64, y= 80
+07: runtime x= 48, y= 80 | table x= 48, y= 80
+08: runtime x= 48, y= 96 | table x= 48, y= 96
+09: runtime x= 64, y= 96 | table x= 64, y= 96
+10: runtime x= 16, y= 80 | table x= 16, y= 80
+11: runtime x= 16, y= 64 | table x= 16, y= 64
+12: runtime x= 16, y= 48 | table x= 16, y= 48
+13: runtime x= 32, y= 48 | table x= 32, y= 48
+14: runtime x= 48, y= 48 | table x= 48, y= 48
+15: runtime x=144, y= 48 | table x=144, y= 48
+16: runtime x=160, y= 48 | table x=160, y= 48
+17: runtime x=176, y= 48 | table x=176, y= 48
+18: runtime x=176, y= 64 | table x=176, y= 64
+19: runtime x=176, y= 80 | table x=176, y= 80

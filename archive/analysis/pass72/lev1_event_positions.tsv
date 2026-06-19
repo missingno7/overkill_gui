@@ -1,0 +1,63 @@
+row	col	raw	spawn_x	behavior	label	confidence
+0	1	0x04	16	0x8B	green enemy 8B	confirmed by runtime dump
+0	2	0x07	32	0x8C	related green/event 8C	static
+0	7	0x6C	112	0x24	event 24	static
+0	8	0x6D	128	0x25	event 25	static
+0	9	0xAC	144	0x90	event 90	static
+0	10	0xB1	160	0x91	event 91	static
+0	11	0xC9	176	0x28	event 28	static
+17	3	0xB1	48	0x91	event 91	static
+19	3	0xB1	48	0x91	event 91	static
+41	9	0x04	144	0x8B	green enemy 8B	confirmed by runtime dump
+42	2	0x07	32	0x8C	related green/event 8C	static
+43	2	0xB1	32	0x91	event 91	static
+45	5	0x6D	80	0x25	event 25	static
+60	5	0xB1	80	0x91	event 91	static
+60	9	0xAC	144	0x90	event 90	static
+70	4	0xAC	64	0x90	event 90	static
+70	8	0xB1	128	0x91	event 91	static
+73	3	0x6C	48	0x24	event 24	static
+73	9	0x6D	144	0x25	event 25	static
+78	4	0x04	64	0x8B	green enemy 8B	confirmed by runtime dump
+79	10	0x07	160	0x8C	related green/event 8C	static
+81	1	0x6D	16	0x25	event 25	static
+82	8	0xB1	128	0x91	event 91	static
+83	2	0x6D	32	0x25	event 25	static
+85	7	0xAC	112	0x90	event 90	static
+85	9	0xB1	144	0x91	event 91	static
+89	8	0xB1	128	0x91	event 91	static
+91	10	0x6D	160	0x25	event 25	static
+93	4	0xAC	64	0x90	event 90	static
+93	8	0xB1	128	0x91	event 91	static
+101	3	0xC9	48	0x28	event 28	static
+102	6	0x07	96	0x8C	related green/event 8C	static
+107	1	0xB1	16	0x91	event 91	static
+107	11	0xC9	176	0x28	event 28	static
+111	6	0xAC	96	0x90	event 90	static
+114	6	0xAC	96	0x90	event 90	static
+128	0	0xC9	0	0x28	event 28	static
+131	3	0xC9	48	0x28	event 28	static
+132	8	0x07	128	0x8C	related green/event 8C	static
+142	11	0xAC	176	0x90	event 90	static
+144	3	0x6D	48	0x25	event 25	static
+150	4	0xB1	64	0x91	event 91	static
+153	8	0x04	128	0x8B	green enemy 8B	confirmed by runtime dump
+166	4	0xAC	64	0x90	event 90	static
+166	8	0xB1	128	0x91	event 91	static
+171	5	0xAC	80	0x90	event 90	static
+171	7	0xB1	112	0x91	event 91	static
+175	2	0xAC	32	0x90	event 90	static
+175	10	0xB1	160	0x91	event 91	static
+188	7	0xC9	112	0x28	event 28	static
+191	10	0xC9	160	0x28	event 28	static
+201	4	0x6D	64	0x25	event 25	static
+206	9	0x04	144	0x8B	green enemy 8B	confirmed by runtime dump
+211	3	0x6D	48	0x25	event 25	static
+215	8	0x6C	128	0x24	event 24	static
+218	7	0x6C	112	0x24	event 24	static
+225	8	0x04	128	0x8B	green enemy 8B	confirmed by runtime dump
+233	10	0xAC	160	0x90	event 90	static
+263	0	0xC9	0	0x28	event 28	static
+263	11	0xC9	176	0x28	event 28	static
+266	2	0xB1	32	0x91	event 91	static
+266	10	0xAC	160	0x90	event 90	static

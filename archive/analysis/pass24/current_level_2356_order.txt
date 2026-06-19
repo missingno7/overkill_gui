@@ -1,0 +1,14 @@
+Current-level order clue:
+
+8d31: c7 06 56 23 00 00     movw $0x0,0x2356
+8d75: eb 10                 jmp 0x8d87
+8d87: ff 06 56 23           incw 0x2356
+8d8b: 83 3e 56 23 06        cmpw $0x6,0x2356
+8d90: 72 06                 jb 0x8d98
+8d92: c7 06 56 23 00 00     movw $0x0,0x2356
+
+Interpretation:
+- 0x2356 is current level/resource index.
+- It is initialized to 0, but incremented before the main level load.
+- Thus first playable resource index is likely 1.
+- After resource 5, it wraps to 0.

@@ -1,0 +1,169 @@
+{
+  "LEV1": [
+    {
+      "id": "LEV1_c160_formation_147_150",
+      "status": "hypothesis",
+      "canonical_section": 160,
+      "object_count": 4,
+      "sprites_decimal": [
+        147,
+        148,
+        149,
+        150
+      ],
+      "sprites_hex": [
+        "0x93",
+        "0x94",
+        "0x95",
+        "0x96"
+      ],
+      "suspected_code": {
+        "routine": "0x8615..0x861B",
+        "formula": "object.sprite_field_0x08 = word[0x233C] + 0x93",
+        "animation_counter": "0x233C cycles 0..3 at 0x5E80..0x5E84"
+      },
+      "notes": "This matches the user-reported c160 enemies using 2X2 sprites 147-150. It does not yet explain spawn positions/count. It only explains a plausible sprite-frame selection path.",
+      "pass60_update": {
+        "behavior_dispatch_table": {
+          "dispatcher_code": "0xD1E3..0xD1E8: bx = object[+0x18] << 1; jmp cs:[table + bx]",
+          "flat_table_observed_at": "0xD1ED",
+          "important_entries": {
+            "0x28": "0x8676",
+            "0x29": "0x8721",
+            "0x2A": "0x8676",
+            "0x2B": "0x8715",
+            "0x7A": "0x870C",
+            "0x7C": "0x8707",
+            "0x8F": "0x8769",
+            "0x93": "0x8D5F",
+            "0x9D": "0x83D2"
+          }
+        },
+        "sprite_formula_context": "The 0x93..0x96 formula is inside the large behavior-code region, but not yet directly mapped to a clean behavior table entry. It may be reached as a fall-through/sub-state inside a handler, or the disassembly entry point is not exactly aligned to instruction boundaries.",
+        "possible_spawn_or_script_system": {
+          "behavior_0x9D": "dispatches to 0x83D2, which uses structures around 0x9682/0x968C/0x9696/0x96A0 and script-call style code",
+          "structures": [
+            "0x9682",
+            "0x968C",
+            "0x9696",
+            "0x96A0"
+          ],
+          "note": "This may be related to formations or scripted objects; it is not yet confirmed as the c160 enemy spawner."
+        }
+      },
+      "pass67_caveat": {
+        "finding": "The code at 0x8615 computes 0x93+[0x233C], but no direct behavior-table entry or direct jump target to 0x8615 was found in the static table.",
+        "interpretation": "The formula still matches the user-reported sprites, but we should confirm its runtime owner via object-pool dump instead of trusting static control-flow alone.",
+        "practical_test": "When c160 enemies are visible, dump object pools and look for active sprite 147..150. Their +0x18 behavior will identify the actual owner."
+      }
+    }
+  ],
+  "runtime_formulas": {
+    "pickup_drop_sprite_formula": {
+      "id": "pickup_drop_sprite_formula",
+      "status": "strong",
+      "code": "0xDE61..0xDE67",
+      "formula": "object.sprite_field_0x08 = object.state_field_0x06 + 0x3B",
+      "meaning": "2X2 sprite index = state/drop_type + 59",
+      "examples": {
+        "state_0": "2X2 sprite 59",
+        "state_1": "2X2 sprite 60",
+        "state_2": "2X2 sprite 61",
+        "state_3": "2X2 sprite 62",
+        "state_12": "2X2 sprite 71"
+      },
+      "related_behavior": {
+        "0xDE86": "sets object +0x18 = 0x93 after lcall, likely transitions pickup/drop object into behavior 0x93",
+        "0xDE8C..0xE09E": "behavior 0x93 update logic / pickup movement or collection checks"
+      },
+      "why_it_matters": "User reported c160 enemy drops 2X2 sprite 71. This formula explains sprite 71 if object +0x06/drop_type is 12.",
+      "pass62_update": {
+        "direct_drop_type_12_write": "not found",
+        "interpretation": "drop_type=12 is probably produced via a table/register path, not a simple immediate mov to object+0x06",
+        "new_related_code": {
+          "0xA947": "same sprite formula object+0x08 = object+0x06 + 0x3B appears in a level-specific object/pickup routine",
+          "0xA96F..0xA9FC": "same object+0x06 base value can be remapped to level-specific sprite ranges depending on current level variable 0x2356"
+        }
+      }
+    }
+  },
+  "runtime_spawn_hypotheses": {
+    "scroll_0xEA0_four_object_table": {
+      "id": "scroll_0xEA0_four_object_table",
+      "status": "strong pattern but table contents not decoded",
+      "trigger": "scroll variable 0x2350 == 0x0EA0",
+      "code": "0x9CF4..0x9D40",
+      "object_count": 4,
+      "data_pointer": "DS:0xA3EE",
+      "record_format": "four records, each record has three words: object+0x02, object+0x04, object+0x08",
+      "object_fields": {
+        "+0x14": "0x0002",
+        "+0x16": "0x0004",
+        "+0x18": "0x0053 behavior",
+        "+0x28": "0xFFFF"
+      },
+      "notes": "This is the first clearly identified code-created 4-object formation. It may not be the c160 formation because the trigger is scroll 0xEA0, but it proves the storage model: formations can be tables of off-grid object x/y/sprite triples in DS memory."
+    }
+  },
+  "runtime_object_dump_plan": {
+    "c160_watch_sprites": {
+      "sprites": [
+        147,
+        148,
+        149,
+        150
+      ],
+      "drop_sprite": 71,
+      "why": "User-reported c160 enemies use sprites 147-150 and drop sprite 71.",
+      "dump_target": "DS:23B4..DS:32CB",
+      "converter": "tools/convert_runtime_object_dump.py --watch-sprites 147,148,149,150,71",
+      "expected_result": "Active object slots with sprite 147..150 should reveal exact x/y and behavior."
+    }
+  },
+  "confirmed_runtime_dumps": {
+    "LEV1_c160_4_enemies": {
+      "source": "MEMDUMP.BIN uploaded by user",
+      "ds": "0x1F0D",
+      "dump_target": "DS:23B4..DS:32CB",
+      "objects": [
+        {
+          "pool": "A",
+          "slot": 14,
+          "x": 64,
+          "y": 54,
+          "sprite": 149,
+          "behavior": "0x2D",
+          "state_06": 4
+        },
+        {
+          "pool": "A",
+          "slot": 15,
+          "x": 80,
+          "y": 50,
+          "sprite": 149,
+          "behavior": "0x2D",
+          "state_06": 4
+        },
+        {
+          "pool": "A",
+          "slot": 16,
+          "x": 112,
+          "y": 50,
+          "sprite": 149,
+          "behavior": "0x2D",
+          "state_06": 4
+        },
+        {
+          "pool": "A",
+          "slot": 17,
+          "x": 128,
+          "y": 54,
+          "sprite": 149,
+          "behavior": "0x2D",
+          "state_06": 4
+        }
+      ],
+      "user_feedback": "These four enemies do not drop a pickup; they stay briefly and then fly downward."
+    }
+  }
+}

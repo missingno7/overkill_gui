@@ -1,0 +1,14 @@
+    8a7f:	ff 46 04             	incw   0x4(%bp)
+    8a82:	e9 26 30             	jmp    0xbaab
+    8a85:	a1 3c 23             	mov    0x233c,%ax
+    8a88:	05 9d 00             	add    $0x9d,%ax
+    8a8b:	e9 84 26             	jmp    0xb112
+    8a8e:	a1 38 23             	mov    0x2338,%ax
+    8a91:	05 4b 00             	add    $0x4b,%ax
+    8a94:	e9 84 fb             	jmp    0x861b
+    8a97:	a1 38 23             	mov    0x2338,%ax
+    8a9a:	05 51 00             	add    $0x51,%ax
+    8a9d:	e9 72 26             	jmp    0xb112
+    8aa0:	b8 1d 00             	mov    $0x1d,%ax
+    8aa3:	89 46 08             	mov    %ax,0x8(%bp)
+    8aa6:	83 46 02 02          	addw   $0x2,0x2(%bp)

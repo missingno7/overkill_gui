@@ -1,0 +1,20 @@
+    b8a2:	e8 11 b3             	call   0x6bb6
+    b8a5:	83 fb ff             	cmp    $0xffff,%bx
+    b8a8:	75 01                	jne    0xb8ab
+    b8aa:	c3                   	ret
+    b8ab:	8b 46 04             	mov    0x4(%bp),%ax
+    b8ae:	05 04 00             	add    $0x4,%ax
+    b8b1:	89 47 04             	mov    %ax,0x4(%bx)
+    b8b4:	8b 46 02             	mov    0x2(%bp),%ax
+    b8b7:	05 04 00             	add    $0x4,%ax
+    b8ba:	89 47 02             	mov    %ax,0x2(%bx)
+    b8bd:	8b 46 06             	mov    0x6(%bp),%ax
+    b8c0:	89 47 06             	mov    %ax,0x6(%bx)
+    b8c3:	c7 07 01 00          	movw   $0x1,(%bx)
+    b8c7:	c7 47 1e 00 00       	movw   $0x0,0x1e(%bx)
+    b8cc:	c7 47 08 30 00       	movw   $0x30,0x8(%bx)
+    b8d1:	c7 47 0a 00 00       	movw   $0x0,0xa(%bx)
+    b8d6:	c7 47 14 00 00       	movw   $0x0,0x14(%bx)
+    b8db:	c7 47 16 02 00       	movw   $0x2,0x16(%bx)
+    b8e0:	c7 47 18 04 00       	movw   $0x4,0x18(%bx)
+    b8e5:	c7 47 1c ff ff       	movw   $0xffff,0x1c(%bx)

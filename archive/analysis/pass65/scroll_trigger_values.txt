@@ -1,0 +1,22 @@
+0x0E5F dec=3679 row16=229.9 line=4093:     2ab1:	81 3e 50 23 5f 0e    	cmpw   $0xe5f,0x2350
+0x0E5F dec=3679 row16=229.9 line=5347:     35cd:	81 3e 50 23 5f 0e    	cmpw   $0xe5f,0x2350
+0x0E5F dec=3679 row16=229.9 line=7375:     4811:	81 3e 50 23 5f 0e    	cmpw   $0xe5f,0x2350
+0x009C dec=156 row16=9.8 line=9398:     5dab:	81 3e 50 23 9c 00    	cmpw   $0x9c,0x2350
+0x0EA0 dec=3744 row16=234.0 line=9401:     5db5:	81 3e 50 23 a0 0e    	cmpw   $0xea0,0x2350
+0x0750 dec=1872 row16=117.0 line=9416:     5de2:	81 3e 50 23 50 07    	cmpw   $0x750,0x2350
+0x009C dec=156 row16=9.8 line=9509:     5f3b:	81 3e 50 23 9c 00    	cmpw   $0x9c,0x2350
+0x009C dec=156 row16=9.8 line=13745:     8dea:	81 3e 50 23 9c 00    	cmpw   $0x9c,0x2350
+0x00B6 dec=182 row16=11.4 line=14043:     91da:	81 3e 50 23 b6 00    	cmpw   $0xb6,0x2350
+0x00B6 dec=182 row16=11.4 line=14061:     9217:	81 3e 50 23 b6 00    	cmpw   $0xb6,0x2350
+0x00B6 dec=182 row16=11.4 line=14069:     9232:	81 3e 50 23 b6 00    	cmpw   $0xb6,0x2350
+0x00B6 dec=182 row16=11.4 line=14434:     96cd:	81 3e 50 23 b6 00    	cmpw   $0xb6,0x2350
+0x00B6 dec=182 row16=11.4 line=14876:     9c59:	81 3e 50 23 b6 00    	cmpw   $0xb6,0x2350
+0x0E52 dec=3666 row16=229.1 line=14926:     9ce0:	81 3e 50 23 52 0e    	cmpw   $0xe52,0x2350
+0x0EA0 dec=3744 row16=234.0 line=14938:     9cf4:	81 3e 50 23 a0 0e    	cmpw   $0xea0,0x2350
+0x00B6 dec=182 row16=11.4 line=14990:     9d94:	81 3e 50 23 b6 00    	cmpw   $0xb6,0x2350
+0x0000 dec=0 row16=0.0 line=15005:     9dcb:	83 3e 50 23 00       	cmpw   $0x0,0x2350
+0x0E52 dec=3666 row16=229.1 line=15053:     9e74:	81 3e 50 23 52 0e    	cmpw   $0xe52,0x2350
+0x00B6 dec=182 row16=11.4 line=15099:     9eed:	81 3e 50 23 b6 00    	cmpw   $0xb6,0x2350
+0x00B6 dec=182 row16=11.4 line=15117:     9f20:	81 3e 50 23 b6 00    	cmpw   $0xb6,0x2350
+0x00B6 dec=182 row16=11.4 line=15503:     a34e:	81 3e 50 23 b6 00    	cmpw   $0xb6,0x2350
+0x0E52 dec=3666 row16=229.1 line=16057:     a978:	81 3e 50 23 52 0e    	cmpw   $0xe52,0x2350

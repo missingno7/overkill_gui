@@ -1,0 +1,178 @@
+    de40:	c7 47 20 03 00       	movw   $0x3,0x20(%bx)
+    de45:	ff 06 7e a4          	incw   -0x5b82
+    de49:	eb 16                	jmp    0xde61
+    de4b:	83 06 82 a4 04       	addw   $0x4,-0x5b7e
+    de50:	b8 f4 81             	mov    $0x81f4,%ax
+    de53:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    de58:	83 fb ff             	cmp    $0xffff,%bx
+    de5b:	74 04                	je     0xde61
+    de5d:	ff 06 7e a4          	incw   -0x5b82
+    de61:	8b 46 06             	mov    0x6(%bp),%ax
+    de64:	05 3b 00             	add    $0x3b,%ax
+    de67:	89 46 08             	mov    %ax,0x8(%bp)
+    de6a:	cb                   	lret
+    de6b:	c7 46 08 6a 01       	movw   $0x16a,0x8(%bp)
+    de70:	c7 06 08 23 01 00    	movw   $0x1,0x2308
+    de76:	ff 76 06             	push   0x6(%bp)
+    de79:	b8 29 b7             	mov    $0xb729,%ax
+    de7c:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    de81:	8f 46 06             	pop    0x6(%bp)
+    de84:	74 05                	je     0xde8b
+    de86:	c7 46 18 93 00       	movw   $0x93,0x18(%bp)
+    de8b:	cb                   	lret
+    de8c:	81 3e 82 a4 f0 a6    	cmpw   $0xa6f0,-0x5b7e
+    de92:	74 03                	je     0xde97
+    de94:	e9 fb 01             	jmp    0xe092
+    de97:	83 7e 1c 00          	cmpw   $0x0,0x1c(%bp)
+    de9b:	74 08                	je     0xdea5
+    de9d:	ff 4e 1c             	decw   0x1c(%bp)
+    dea0:	74 03                	je     0xdea5
+    dea2:	e9 ed 01             	jmp    0xe092
+    dea5:	83 7e 06 00          	cmpw   $0x0,0x6(%bp)
+    dea9:	74 43                	je     0xdeee
+    deab:	83 7e 06 01          	cmpw   $0x1,0x6(%bp)
+    deaf:	74 3d                	je     0xdeee
+    deb1:	83 7e 06 07          	cmpw   $0x7,0x6(%bp)
+    deb5:	74 37                	je     0xdeee
+    deb7:	83 7e 06 04          	cmpw   $0x4,0x6(%bp)
+    debb:	75 7e                	jne    0xdf3b
+    debd:	b8 d8 af             	mov    $0xafd8,%ax
+    dec0:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    dec5:	b8 d8 af             	mov    $0xafd8,%ax
+    dec8:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    decd:	b8 d8 af             	mov    $0xafd8,%ax
+    ded0:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    ded5:	b8 d8 af             	mov    $0xafd8,%ax
+    ded8:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    dedd:	75 0a                	jne    0xdee9
+    dedf:	81 7e 02 d0 00       	cmpw   $0xd0,0x2(%bp)
+    dee4:	73 03                	jae    0xdee9
+    dee6:	e9 b5 01             	jmp    0xe09e
+    dee9:	c7 46 06 00 00       	movw   $0x0,0x6(%bp)
+    deee:	b8 d8 af             	mov    $0xafd8,%ax
+    def1:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    def6:	74 03                	je     0xdefb
+    def8:	e8 a4 01             	call   0xe09f
+    defb:	b8 d8 af             	mov    $0xafd8,%ax
+    defe:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    df03:	74 03                	je     0xdf08
+    df05:	e8 97 01             	call   0xe09f
+    df08:	b8 d8 af             	mov    $0xafd8,%ax
+    df0b:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    df10:	74 03                	je     0xdf15
+    df12:	e8 8a 01             	call   0xe09f
+    df15:	75 0a                	jne    0xdf21
+    df17:	c7 46 36 00 00       	movw   $0x0,0x36(%bp)
+    df1c:	c7 46 06 00 00       	movw   $0x0,0x6(%bp)
+    df21:	83 7e 02 20          	cmpw   $0x20,0x2(%bp)
+    df25:	76 03                	jbe    0xdf2a
+    df27:	e9 74 01             	jmp    0xe09e
+    df2a:	c7 46 06 06 00       	movw   $0x6,0x6(%bp)
+    df2f:	f7 46 04 02 00       	testw  $0x2,0x4(%bp)
+    df34:	74 05                	je     0xdf3b
+    df36:	c7 46 06 02 00       	movw   $0x2,0x6(%bp)
+    df3b:	a1 2a 23             	mov    0x232a,%ax
+    df3e:	d1 e8                	shr    $1,%ax
+    df40:	d1 e8                	shr    $1,%ax
+    df42:	d1 e8                	shr    $1,%ax
+    df44:	05 6a 01             	add    $0x16a,%ax
+    df47:	89 46 08             	mov    %ax,0x8(%bp)
+    df4a:	80 3e a9 98 00       	cmpb   $0x0,-0x6757
+    df4f:	74 33                	je     0xdf84
+    df51:	ff 76 06             	push   0x6(%bp)
+    df54:	c7 46 06 04 00       	movw   $0x4,0x6(%bp)
+    df59:	b8 d8 af             	mov    $0xafd8,%ax
+    df5c:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    df61:	b8 d8 af             	mov    $0xafd8,%ax
+    df64:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    df69:	b8 d8 af             	mov    $0xafd8,%ax
+    df6c:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    df71:	b8 d8 af             	mov    $0xafd8,%ax
+    df74:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    df79:	b8 d8 af             	mov    $0xafd8,%ax
+    df7c:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    df81:	8f 46 06             	pop    0x6(%bp)
+    df84:	a1 40 23             	mov    0x2340,%ax
+    df87:	25 ff 00             	and    $0xff,%ax
+    df8a:	3d ff 00             	cmp    $0xff,%ax
+    df8d:	75 0c                	jne    0xdf9b
+    df8f:	b8 e1 ba             	mov    $0xbae1,%ax
+    df92:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    df97:	ff 06 40 23          	incw   0x2340
+    df9b:	83 3e 40 23 00       	cmpw   $0x0,0x2340
+    dfa0:	74 08                	je     0xdfaa
+    dfa2:	81 3e 40 23 bd 02    	cmpw   $0x2bd,0x2340
+    dfa8:	75 0c                	jne    0xdfb6
+    dfaa:	b8 76 74             	mov    $0x7476,%ax
+    dfad:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    dfb2:	ff 06 40 23          	incw   0x2340
+    dfb6:	83 7e 04 00          	cmpw   $0x0,0x4(%bp)
+    dfba:	74 75                	je     0xe031
+    dfbc:	81 7e 04 c0 00       	cmpw   $0xc0,0x4(%bp)
+    dfc1:	74 0b                	je     0xdfce
+    dfc3:	83 7e 06 06          	cmpw   $0x6,0x6(%bp)
+    dfc7:	74 03                	je     0xdfcc
+    dfc9:	e9 92 00             	jmp    0xe05e
+    dfcc:	eb 2d                	jmp    0xdffb
+    dfce:	c7 46 06 04 00       	movw   $0x4,0x6(%bp)
+    dfd3:	b8 d8 af             	mov    $0xafd8,%ax
+    dfd6:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    dfdb:	b8 d8 af             	mov    $0xafd8,%ax
+    dfde:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    dfe3:	b8 d8 af             	mov    $0xafd8,%ax
+    dfe6:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    dfeb:	b8 d8 af             	mov    $0xafd8,%ax
+    dfee:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    dff3:	b8 d8 af             	mov    $0xafd8,%ax
+    dff6:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    dffb:	c7 46 06 06 00       	movw   $0x6,0x6(%bp)
+    e000:	b8 d8 af             	mov    $0xafd8,%ax
+    e003:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    e008:	75 20                	jne    0xe02a
+    e00a:	b8 d8 af             	mov    $0xafd8,%ax
+    e00d:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    e012:	75 16                	jne    0xe02a
+    e014:	b8 d8 af             	mov    $0xafd8,%ax
+    e017:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    e01c:	75 0c                	jne    0xe02a
+    e01e:	b8 d8 af             	mov    $0xafd8,%ax
+    e021:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    e026:	75 02                	jne    0xe02a
+    e028:	eb 68                	jmp    0xe092
+    e02a:	c7 46 06 02 00       	movw   $0x2,0x6(%bp)
+    e02f:	eb 61                	jmp    0xe092
+    e031:	c7 46 06 04 00       	movw   $0x4,0x6(%bp)
+    e036:	b8 d8 af             	mov    $0xafd8,%ax
+    e039:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    e03e:	b8 d8 af             	mov    $0xafd8,%ax
+    e041:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    e046:	b8 d8 af             	mov    $0xafd8,%ax
+    e049:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    e04e:	b8 d8 af             	mov    $0xafd8,%ax
+    e051:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    e056:	b8 d8 af             	mov    $0xafd8,%ax
+    e059:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    e05e:	c7 46 06 02 00       	movw   $0x2,0x6(%bp)
+    e063:	b8 d8 af             	mov    $0xafd8,%ax
+    e066:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    e06b:	75 20                	jne    0xe08d
+    e06d:	b8 d8 af             	mov    $0xafd8,%ax
+    e070:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    e075:	75 16                	jne    0xe08d
+    e077:	b8 d8 af             	mov    $0xafd8,%ax
+    e07a:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    e07f:	75 0c                	jne    0xe08d
+    e081:	b8 d8 af             	mov    $0xafd8,%ax
+    e084:	9a 8b 8d 00 00       	lcall  $0x0,$0x8d8b
+    e089:	75 02                	jne    0xe08d
+    e08b:	eb 05                	jmp    0xe092
+    e08d:	c7 46 06 06 00       	movw   $0x6,0x6(%bp)
+    e092:	81 7e 02 80 00       	cmpw   $0x80,0x2(%bp)
+    e097:	72 05                	jb     0xe09e
+    e099:	c7 46 06 04 00       	movw   $0x4,0x6(%bp)
+    e09e:	cb                   	lret
+    e09f:	ff 46 36             	incw   0x36(%bp)
+    e0a2:	c7 46 06 07 00       	movw   $0x7,0x6(%bp)
+    e0a7:	83 7e 04 60          	cmpw   $0x60,0x4(%bp)
+    e0ab:	77 05                	ja     0xe0b2
+    e0ad:	c7 46 06 01 00       	movw   $0x1,0x6(%bp)

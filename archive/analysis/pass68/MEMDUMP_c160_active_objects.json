@@ -1,0 +1,74 @@
+[
+  {
+    "pool": "A",
+    "slot": 14,
+    "ds_offset": "0x26C4",
+    "x": 64,
+    "y": 54,
+    "sprite": 149,
+    "behavior": "0x2D",
+    "state_06": 4,
+    "class_16": 4,
+    "watched": true
+  },
+  {
+    "pool": "A",
+    "slot": 15,
+    "ds_offset": "0x26FC",
+    "x": 80,
+    "y": 50,
+    "sprite": 149,
+    "behavior": "0x2D",
+    "state_06": 4,
+    "class_16": 4,
+    "watched": true
+  },
+  {
+    "pool": "A",
+    "slot": 16,
+    "ds_offset": "0x2734",
+    "x": 112,
+    "y": 50,
+    "sprite": 149,
+    "behavior": "0x2D",
+    "state_06": 4,
+    "class_16": 4,
+    "watched": true
+  },
+  {
+    "pool": "A",
+    "slot": 17,
+    "ds_offset": "0x276C",
+    "x": 128,
+    "y": 54,
+    "sprite": 149,
+    "behavior": "0x2D",
+    "state_06": 4,
+    "class_16": 4,
+    "watched": true
+  },
+  {
+    "pool": "A",
+    "slot": 0,
+    "ds_offset": "0x23B4",
+    "x": 96,
+    "y": 175,
+    "sprite": 11,
+    "behavior": "0x00",
+    "state_06": 0,
+    "class_16": 6,
+    "watched": false
+  },
+  {
+    "pool": "A",
+    "slot": 7,
+    "ds_offset": "0x253C",
+    "x": 96,
+    "y": 145,
+    "sprite": 15,
+    "behavior": "0x00",
+    "state_06": 6,
+    "class_16": 1,
+    "watched": false
+  }
+]

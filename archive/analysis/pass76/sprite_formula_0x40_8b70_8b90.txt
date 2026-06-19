@@ -1,0 +1,11 @@
+    8b70:	a1 28 23             	mov    0x2328,%ax
+    8b73:	03 c5                	add    %bp,%ax
+    8b75:	03 06 40 23          	add    0x2340,%ax
+    8b79:	25 07 00             	and    $0x7,%ax
+    8b7c:	05 80 00             	add    $0x80,%ax
+    8b7f:	89 46 08             	mov    %ax,0x8(%bp)
+    8b82:	83 46 02 04          	addw   $0x4,0x2(%bp)
+    8b86:	e9 22 2f             	jmp    0xbaab
+    8b89:	e9 1f 2f             	jmp    0xbaab
+    8b8c:	8b 1e 28 23          	mov    0x2328,%bx
+    8b90:	83 e3 fe             	and    $0xfffe,%bx

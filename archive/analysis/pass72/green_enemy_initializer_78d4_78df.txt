@@ -1,0 +1,5 @@
+    78d4:	e8 58 07             	call   0x802f
+    78d7:	75 01                	jne    0x78da
+    78d9:	c3                   	ret
+    78da:	c7 47 18 8b 00       	movw   $0x8b,0x18(%bx)
+    78df:	c3                   	ret

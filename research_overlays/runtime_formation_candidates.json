@@ -1,0 +1,123 @@
+{
+  "LEV1": [
+    {
+      "id": "scroll_0xEA0_table_4_objects",
+      "confidence": "high_structure_low_positions",
+      "kind": "table_driven_formation",
+      "trigger": {
+        "variable": "0x2350",
+        "equals": "0x0EA0",
+        "decimal": 3744,
+        "row16": 234.0
+      },
+      "code_range": "0x9CF4..0x9D40",
+      "object_count": 4,
+      "data_pointer": "DS:0xA3EE",
+      "record_words": [
+        "object+0x02",
+        "object+0x04",
+        "object+0x08"
+      ],
+      "fixed_fields": {
+        "object+0x00": "1",
+        "object+0x14": "2",
+        "object+0x16": "4",
+        "object+0x18": "0x53",
+        "object+0x28": "0xFFFF"
+      },
+      "position_status": "do not draw as real position; only a code-pattern candidate until DS table/scroll mapping is solved",
+      "why_no_positions_yet": "DS:0xA3EE is runtime data. The flat file offset 0xA3EE contains code; no static write references to DS:0xA3EE were found.",
+      "next_step": "runtime memory dump or DS segment mapping",
+      "visible_overlay_default": false,
+      "user_feedback": "User does not see anything like this in game at the drawn candidate position.",
+      "status": "code_pattern_found_but_not_visually_correlated"
+    },
+    {
+      "id": "relative_8_object_burst_from_parent",
+      "confidence": "high_structure_relative_positions",
+      "kind": "relative_spawn_burst",
+      "code_range": "0xAA45..0xAAAA",
+      "object_count": 8,
+      "position_formula": {
+        "dx": "0x0C if parent+0x14 == 2 else 0x04",
+        "child+0x04": "parent+0x04 + dx",
+        "child+0x02": "parent+0x02 + dx"
+      },
+      "sprite_formula": {
+        "child+0x06": "loop_index_minus_1",
+        "child+0x08": "loop_index_minus_1 + 0x08"
+      },
+      "fixed_fields": {
+        "object+0x18": "0x03",
+        "object+0x16": "0x02",
+        "object+0x0A": "1"
+      },
+      "position_status": "relative to parent object, not absolute map table",
+      "notes": "This creates an 8-object burst around/after a parent. It is useful evidence that many enemy/bullet positions are generated at runtime."
+    },
+    {
+      "id": "relative_child_spawn_behavior_0x04",
+      "confidence": "medium",
+      "kind": "relative_child_spawn",
+      "code_range": "0xB8A2..0xB8E5",
+      "object_count": "conditional single child",
+      "position_formula": {
+        "child+0x04": "parent+0x04 + 4 or +12 depending on branch",
+        "child+0x02": "parent+0x02 + 4 or +12 depending on branch"
+      },
+      "sprite": "0x30",
+      "behavior": "0x04",
+      "position_status": "relative to parent object"
+    },
+    {
+      "id": "script_pointer_spawn_cluster_a962_a96c",
+      "confidence": "medium_structure_low_positions",
+      "kind": "script_pointer_spawn_cluster",
+      "code_range": "0x9A0D..0x9A5D and 0x99BB..0x9A0C",
+      "pointers": [
+        "DS:0xA962",
+        "DS:0xA964",
+        "DS:0xA966",
+        "DS:0xA968",
+        "DS:0xA96A",
+        "DS:0xA96C"
+      ],
+      "position_sources": [
+        "SI+0x02",
+        "SI+0x04"
+      ],
+      "fixed_or_computed_fields": {
+        "object+0x18": "0x05/0x06/0x07/0x08 depending branch",
+        "object+0x08": "0x08,0x35,0x37,0x33,0x19/0x1F depending branch"
+      },
+      "position_status": "positions read from runtime pointers, pointer table contents unresolved"
+    }
+  ],
+  "_runtime_object_pools": {
+    "status": "strong",
+    "slot_size": "0x38",
+    "pool_A": {
+      "start": "DS:0x23B4",
+      "end_exclusive": "DS:0x2B5C",
+      "count": 35
+    },
+    "pool_B": {
+      "start": "DS:0x2B5C",
+      "end_exclusive": "DS:0x32CC",
+      "count": 34
+    },
+    "fields": {
+      "+0x00": "active flag",
+      "+0x02": "y / vertical position",
+      "+0x04": "x / horizontal position",
+      "+0x06": "state / drop type / animation substate",
+      "+0x08": "sprite / frame",
+      "+0x16": "class/layer-ish",
+      "+0x18": "behavior/type dispatch",
+      "+0x32": "target/aux y",
+      "+0x34": "target/aux x",
+      "+0x36": "sprite backup / aux"
+    },
+    "dump_target": "DS:23B4..DS:32CB length 0x0F18 bytes"
+  }
+}

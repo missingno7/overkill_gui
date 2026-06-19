@@ -1,0 +1,103 @@
+    a8ff:	c7 46 36 5c a4       	movw   $0xa45c,0x36(%bp)
+    a904:	eb 05                	jmp    0xa90b
+    a906:	c7 46 36 3c a4       	movw   $0xa43c,0x36(%bp)
+    a90b:	c7 46 18 12 00       	movw   $0x12,0x18(%bp)
+    a910:	8b 76 36             	mov    0x36(%bp),%si
+    a913:	ad                   	lods   %ds:(%si),%ax
+    a914:	05 20 00             	add    $0x20,%ax
+    a917:	a3 06 23             	mov    %ax,0x2306
+    a91a:	ad                   	lods   %ds:(%si),%ax
+    a91b:	a3 04 23             	mov    %ax,0x2304
+    a91e:	c7 06 08 23 01 00    	movw   $0x1,0x2308
+    a924:	83 3e 56 23 00       	cmpw   $0x0,0x2356
+    a929:	74 07                	je     0xa932
+    a92b:	83 3e ac bd 01       	cmpw   $0x1,-0x4254
+    a930:	75 06                	jne    0xa938
+    a932:	c7 06 08 23 02 00    	movw   $0x2,0x2308
+    a938:	e8 ba aa             	call   0x53f5
+    a93b:	83 3e 0a 23 00       	cmpw   $0x0,0x230a
+    a940:	74 05                	je     0xa947
+    a942:	89 76 36             	mov    %si,0x36(%bp)
+    a945:	eb c9                	jmp    0xa910
+    a947:	8b 46 06             	mov    0x6(%bp),%ax
+    a94a:	05 3b 00             	add    $0x3b,%ax
+    a94d:	89 46 08             	mov    %ax,0x8(%bp)
+    a950:	83 3e ac bd 01       	cmpw   $0x1,-0x4254
+    a955:	75 03                	jne    0xa95a
+    a957:	e9 34 09             	jmp    0xb28e
+    a95a:	83 3e 56 23 05       	cmpw   $0x5,0x2356
+    a95f:	74 0e                	je     0xa96f
+    a961:	83 3e 56 23 06       	cmpw   $0x6,0x2356
+    a966:	74 07                	je     0xa96f
+    a968:	83 3e 56 23 00       	cmpw   $0x0,0x2356
+    a96d:	75 31                	jne    0xa9a0
+    a96f:	8b 46 06             	mov    0x6(%bp),%ax
+    a972:	05 15 01             	add    $0x115,%ax
+    a975:	89 46 08             	mov    %ax,0x8(%bp)
+    a978:	81 3e 50 23 52 0e    	cmpw   $0xe52,0x2350
+    a97e:	74 03                	je     0xa983
+    a980:	e9 0b 09             	jmp    0xb28e
+    a983:	8b 46 06             	mov    0x6(%bp),%ax
+    a986:	05 05 01             	add    $0x105,%ax
+    a989:	89 46 08             	mov    %ax,0x8(%bp)
+    a98c:	83 3e 56 23 00       	cmpw   $0x0,0x2356
+    a991:	75 03                	jne    0xa996
+    a993:	e9 f8 08             	jmp    0xb28e
+    a996:	83 3e 56 23 06       	cmpw   $0x6,0x2356
+    a99b:	75 03                	jne    0xa9a0
+    a99d:	e9 ee 08             	jmp    0xb28e
+    a9a0:	8b 46 06             	mov    0x6(%bp),%ax
+    a9a3:	05 2a 00             	add    $0x2a,%ax
+    a9a6:	89 46 08             	mov    %ax,0x8(%bp)
+    a9a9:	83 3e 56 23 01       	cmpw   $0x1,0x2356
+    a9ae:	75 03                	jne    0xa9b3
+    a9b0:	e9 db 08             	jmp    0xb28e
+    a9b3:	8b 46 06             	mov    0x6(%bp),%ax
+    a9b6:	05 d2 00             	add    $0xd2,%ax
+    a9b9:	89 46 08             	mov    %ax,0x8(%bp)
+    a9bc:	83 3e 56 23 02       	cmpw   $0x2,0x2356
+    a9c1:	75 03                	jne    0xa9c6
+    a9c3:	e9 c8 08             	jmp    0xb28e
+    a9c6:	8b 46 06             	mov    0x6(%bp),%ax
+    a9c9:	05 ec 00             	add    $0xec,%ax
+    a9cc:	89 46 08             	mov    %ax,0x8(%bp)
+    a9cf:	83 3e 56 23 03       	cmpw   $0x3,0x2356
+    a9d4:	75 03                	jne    0xa9d9
+    a9d6:	e9 b5 08             	jmp    0xb28e
+    a9d9:	83 3e 56 23 07       	cmpw   $0x7,0x2356
+    a9de:	75 03                	jne    0xa9e3
+    a9e0:	e9 ab 08             	jmp    0xb28e
+    a9e3:	8b 46 06             	mov    0x6(%bp),%ax
+    a9e6:	05 ec 00             	add    $0xec,%ax
+    a9e9:	89 46 08             	mov    %ax,0x8(%bp)
+    a9ec:	83 3e 56 23 04       	cmpw   $0x4,0x2356
+    a9f1:	75 03                	jne    0xa9f6
+    a9f3:	e9 98 08             	jmp    0xb28e
+    a9f6:	8b 46 06             	mov    0x6(%bp),%ax
+    a9f9:	05 ec 00             	add    $0xec,%ax
+    a9fc:	89 46 08             	mov    %ax,0x8(%bp)
+    a9ff:	e9 8c 08             	jmp    0xb28e
+    aa02:	a1 42 23             	mov    0x2342,%ax
+    aa05:	40                   	inc    %ax
+    aa06:	d1 e8                	shr    $1,%ax
+    aa08:	05 71 00             	add    $0x71,%ax
+    aa0b:	89 46 08             	mov    %ax,0x8(%bp)
+    aa0e:	c3                   	ret
+    aa0f:	e8 f0 ff             	call   0xaa02
+    aa12:	83 46 02 02          	addw   $0x2,0x2(%bp)
+    aa16:	81 7e 02 a0 00       	cmpw   $0xa0,0x2(%bp)
+    aa1b:	73 03                	jae    0xaa20
+    aa1d:	e9 68 08             	jmp    0xb288
+    aa20:	eb 1a                	jmp    0xaa3c
+    aa22:	e8 dd ff             	call   0xaa02
+    aa25:	ff 46 02             	incw   0x2(%bp)
+    aa28:	83 3e 56 23 00       	cmpw   $0x0,0x2356
+    aa2d:	75 03                	jne    0xaa32
+    aa2f:	ff 46 02             	incw   0x2(%bp)
+    aa32:	81 7e 02 a0 00       	cmpw   $0xa0,0x2(%bp)
+    aa37:	73 03                	jae    0xaa3c
+    aa39:	e9 4c 08             	jmp    0xb288
+    aa3c:	e8 cb 0b             	call   0xb60a
+    aa3f:	e8 03 00             	call   0xaa45
+    aa42:	e9 43 08             	jmp    0xb288
+    aa45:	ba 0c 00             	mov    $0xc,%dx

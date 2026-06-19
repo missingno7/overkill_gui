@@ -1,0 +1,89 @@
+{
+  "LEV1": [
+    {
+      "canonical_row": 125,
+      "col": 2,
+      "label": "reported enemy: 2X2 68-70, drop 71",
+      "sprites": [
+        68,
+        69,
+        70
+      ],
+      "drop_sprite": 71,
+      "source": "user report",
+      "notes": "Clicked cell raw MAP value is 0x01; enemy must be runtime/scripted or visually overlapping from another layer."
+    },
+    {
+      "level_x": 70,
+      "level_y": 2109,
+      "radius": 6,
+      "label": "E1",
+      "sprites": [
+        147,
+        148,
+        149,
+        150
+      ],
+      "source": "screenshot_c160_feedback_pass58",
+      "notes": "User feedback: in this screenshot section there are 4 enemies using 2X2 sprites 147-150. This is an off-grid runtime enemy marker, not a MAP cell. Prior pass57 68-70 label was incorrect for this screenshot.",
+      "canonical_section": 160,
+      "group_label": "c160: 4 enemies, sprites 2X2 147-150",
+      "hypothesis_id": "LEV1_c160_formation_147_150",
+      "suspected_sprite_formula": "2X2 sprite = 0x93 + anim_counter_0x233C"
+    },
+    {
+      "level_x": 86,
+      "level_y": 2104,
+      "radius": 6,
+      "label": "E2",
+      "sprites": [
+        147,
+        148,
+        149,
+        150
+      ],
+      "source": "screenshot_c160_feedback_pass58",
+      "notes": "User feedback: in this screenshot section there are 4 enemies using 2X2 sprites 147-150. This is an off-grid runtime enemy marker, not a MAP cell. Prior pass57 68-70 label was incorrect for this screenshot.",
+      "canonical_section": 160,
+      "group_label": "c160: 4 enemies, sprites 2X2 147-150",
+      "hypothesis_id": "LEV1_c160_formation_147_150",
+      "suspected_sprite_formula": "2X2 sprite = 0x93 + anim_counter_0x233C"
+    },
+    {
+      "level_x": 119,
+      "level_y": 2104,
+      "radius": 6,
+      "label": "E3",
+      "sprites": [
+        147,
+        148,
+        149,
+        150
+      ],
+      "source": "screenshot_c160_feedback_pass58",
+      "notes": "User feedback: in this screenshot section there are 4 enemies using 2X2 sprites 147-150. This is an off-grid runtime enemy marker, not a MAP cell. Prior pass57 68-70 label was incorrect for this screenshot.",
+      "canonical_section": 160,
+      "group_label": "c160: 4 enemies, sprites 2X2 147-150",
+      "hypothesis_id": "LEV1_c160_formation_147_150",
+      "suspected_sprite_formula": "2X2 sprite = 0x93 + anim_counter_0x233C"
+    },
+    {
+      "level_x": 135,
+      "level_y": 2107,
+      "radius": 6,
+      "label": "E4",
+      "sprites": [
+        147,
+        148,
+        149,
+        150
+      ],
+      "source": "screenshot_c160_feedback_pass58",
+      "notes": "User feedback: in this screenshot section there are 4 enemies using 2X2 sprites 147-150. This is an off-grid runtime enemy marker, not a MAP cell. Prior pass57 68-70 label was incorrect for this screenshot.",
+      "canonical_section": 160,
+      "group_label": "c160: 4 enemies, sprites 2X2 147-150",
+      "hypothesis_id": "LEV1_c160_formation_147_150",
+      "suspected_sprite_formula": "2X2 sprite = 0x93 + anim_counter_0x233C"
+    }
+  ]
+}

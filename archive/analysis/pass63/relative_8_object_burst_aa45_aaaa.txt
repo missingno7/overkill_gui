@@ -1,0 +1,35 @@
+    aa45:	ba 0c 00             	mov    $0xc,%dx
+    aa48:	83 7e 14 02          	cmpw   $0x2,0x14(%bp)
+    aa4c:	74 03                	je     0xaa51
+    aa4e:	ba 04 00             	mov    $0x4,%dx
+    aa51:	8b 46 04             	mov    0x4(%bp),%ax
+    aa54:	03 c2                	add    %dx,%ax
+    aa56:	a3 b2 a8             	mov    %ax,0xa8b2
+    aa59:	8b 46 02             	mov    0x2(%bp),%ax
+    aa5c:	03 c2                	add    %dx,%ax
+    aa5e:	a3 b4 a8             	mov    %ax,0xa8b4
+    aa61:	b9 08 00             	mov    $0x8,%cx
+    aa64:	51                   	push   %cx
+    aa65:	e8 4e c1             	call   0x6bb6
+    aa68:	59                   	pop    %cx
+    aa69:	83 fb ff             	cmp    $0xffff,%bx
+    aa6c:	74 3c                	je     0xaaaa
+    aa6e:	51                   	push   %cx
+    aa6f:	49                   	dec    %cx
+    aa70:	89 4f 06             	mov    %cx,0x6(%bx)
+    aa73:	83 c1 08             	add    $0x8,%cx
+    aa76:	89 4f 08             	mov    %cx,0x8(%bx)
+    aa79:	a1 b2 a8             	mov    0xa8b2,%ax
+    aa7c:	89 47 04             	mov    %ax,0x4(%bx)
+    aa7f:	a1 b4 a8             	mov    0xa8b4,%ax
+    aa82:	89 47 02             	mov    %ax,0x2(%bx)
+    aa85:	c7 07 01 00          	movw   $0x1,(%bx)
+    aa89:	c7 47 1e 00 00       	movw   $0x0,0x1e(%bx)
+    aa8e:	c7 47 0a 01 00       	movw   $0x1,0xa(%bx)
+    aa93:	c7 47 14 00 00       	movw   $0x0,0x14(%bx)
+    aa98:	c7 47 16 02 00       	movw   $0x2,0x16(%bx)
+    aa9d:	c7 47 18 03 00       	movw   $0x3,0x18(%bx)
+    aaa2:	c7 47 1c ff ff       	movw   $0xffff,0x1c(%bx)
+    aaa7:	59                   	pop    %cx
+    aaa8:	e2 ba                	loop   0xaa64
+    aaaa:	c3                   	ret

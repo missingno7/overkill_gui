@@ -1,0 +1,27 @@
+    9cf4:	81 3e 50 23 a0 0e    	cmpw   $0xea0,0x2350
+    9cfa:	75 44                	jne    0x9d40
+    9cfc:	c7 06 7c a4 01 00    	movw   $0x1,-0x5b84
+    9d02:	e8 e8 bb             	call   0x58ed
+    9d05:	be ee a3             	mov    $0xa3ee,%si
+    9d08:	b9 04 00             	mov    $0x4,%cx
+    9d0b:	51                   	push   %cx
+    9d0c:	56                   	push   %si
+    9d0d:	e8 57 ce             	call   0x6b67
+    9d10:	5e                   	pop    %si
+    9d11:	83 fb ff             	cmp    $0xffff,%bx
+    9d14:	74 27                	je     0x9d3d
+    9d16:	c7 07 01 00          	movw   $0x1,(%bx)
+    9d1a:	c7 47 14 02 00       	movw   $0x2,0x14(%bx)
+    9d1f:	c7 47 16 04 00       	movw   $0x4,0x16(%bx)
+    9d24:	c7 47 18 53 00       	movw   $0x53,0x18(%bx)
+    9d29:	c7 47 28 ff ff       	movw   $0xffff,0x28(%bx)
+    9d2e:	ad                   	lods   %ds:(%si),%ax
+    9d2f:	89 47 02             	mov    %ax,0x2(%bx)
+    9d32:	ad                   	lods   %ds:(%si),%ax
+    9d33:	89 47 04             	mov    %ax,0x4(%bx)
+    9d36:	ad                   	lods   %ds:(%si),%ax
+    9d37:	89 47 08             	mov    %ax,0x8(%bx)
+    9d3a:	89 47 36             	mov    %ax,0x36(%bx)
+    9d3d:	59                   	pop    %cx
+    9d3e:	e2 cb                	loop   0x9d0b
+    9d40:	c3                   	ret
